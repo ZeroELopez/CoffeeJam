@@ -4,10 +4,12 @@
 [Aa]ssets/AssetStoreTools*
 [Bb]uild/
 [Ll]ibrary/
+[Ll]ogs/
 [Ll]ocal[Cc]ache/
 [Oo]bj/
 [Tt]emp/
 [Uu]nityGenerated/
+[Uu]serSettings/
 # file on crash reports
 sysinfo.txt
 # Unity3D generated meta files
@@ -42,3 +44,8 @@ Thumbs.db
 @FullStackForger
 Author
 FullStackForger co
+CoffeeGameJam/Logs/AssetImportWorker0.log
+CoffeeGameJam/Logs/AssetImportWorker1.log
+CoffeeGameJam/UserSettings/EditorUserSettings.asset
+CoffeeGameJam/UserSettings/Layouts/default-2022.dwlt
+CoffeeGameJam/.vs/CoffeeGameJam/FileContentIndex/read.lock
