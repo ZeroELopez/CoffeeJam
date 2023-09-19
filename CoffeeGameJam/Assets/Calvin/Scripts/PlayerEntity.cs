@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerEntity : MonoBehaviour, InputController.IPlayerControllerActions
+public class PlayerEntity : Entity, InputController.IPlayerControllerActions
 {
     private bool isMoving = false;
     private Vector3 direction;
@@ -46,7 +47,7 @@ public class PlayerEntity : MonoBehaviour, InputController.IPlayerControllerActi
         if (isMoving)
         {
             Vector2 readVector = context.ReadValue<Vector2>();
-            direction = IsoVectorConvert(new Vector3(readVector.x, 0, readVector.y));
+            direction = (new Vector3(readVector.x, 0, readVector.y));
 
             if(direction.x != 0)
             {
@@ -61,7 +62,7 @@ public class PlayerEntity : MonoBehaviour, InputController.IPlayerControllerActi
     }
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Initialize()
     {
         RegisterInputs();
         lastDirection = -Vector2.one;
@@ -89,31 +90,40 @@ public class PlayerEntity : MonoBehaviour, InputController.IPlayerControllerActi
         }
     }
 
-    private Vector3 IsoVectorConvert(Vector3 vector)
-    {
-        Quaternion rotation = Quaternion.Euler(0, 0f, 0);
-        Matrix4x4 matrix = Matrix4x4.Rotate(rotation);
-        Vector3 result = matrix.MultiplyPoint3x4(vector);
-
-        return result;
-    }
-
     private IEnumerator AttackCoroutine()
     {
         isAttacking = true;
+
+        SpriteRenderer rendererTemp = attackHitbox.GetComponent<SpriteRenderer>();
 
         //Wait for start up frames
         yield return new WaitForSeconds(attackStartUpFrames / 60f);
         
         attackHitbox.transform.localPosition = new Vector3(lastDirection.x * attackHitbox.size.x/2, lastDirection.y * attackHitbox.size.y/2, 0);
         attackHitbox.enabled = true;
+
+        if (rendererTemp != null)
+        {
+            rendererTemp.enabled = true;
+        }
         
         //Active Frames
         yield return new WaitForSeconds(attackActiveFrames / 60f);
         attackHitbox.enabled = false;
 
+        if (rendererTemp != null)
+        {
+            rendererTemp.enabled = false;
+        }
+
         //Recovery Frames
         yield return new WaitForSeconds(attackRecoveryFrames / 60f);
         isAttacking = false;
+    }
+
+
+    public override void OnDeath()
+    {
+        throw new NotImplementedException();
     }
 }
