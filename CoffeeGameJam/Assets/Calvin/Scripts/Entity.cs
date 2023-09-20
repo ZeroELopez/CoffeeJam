@@ -8,7 +8,7 @@ public abstract class Entity : MonoBehaviour
     protected int baseHealth;
 
     private int currentHealth;
-    protected int CurrentHealth
+    public int CurrentHealth
     {
         get 
         {  
