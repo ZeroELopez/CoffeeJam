@@ -5,12 +5,12 @@
 [Bb]uild/
 [Ll]ibrary/
 [Ll]ogs/
-Logs/
 [Ll]ocal[Cc]ache/
 [Oo]bj/
 [Tt]emp/
 [Uu]nityGenerated/
 [Uu]serSettings/
+[Pp]rojectSettings/
 .vs
 # file on crash reports
 sysinfo.txt
@@ -49,3 +49,4 @@ FullStackForger co
 CoffeeGameJam/UserSettings/EditorUserSettings.asset
 CoffeeGameJam/UserSettings/Layouts/default-2022.dwlt
 *.log
+*.dwlt

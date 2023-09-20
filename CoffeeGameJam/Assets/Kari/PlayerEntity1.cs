@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerEntity : Entity, InputController.IPlayerControllerActions
+public class PlayerEntitySecond : Entity, InputController.IPlayerControllerActions
 {
     private bool isMoving = false;
     private Vector3 direction;
@@ -25,20 +25,6 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
 
     [SerializeField]
     private int attackRecoveryFrames;
-
-    /// <summary>
-    /// How often to decrement health by
-    /// </summary>
-    [SerializeField]
-    private float decayTimer;
-
-    private float decayTime;
-
-    /// <summary>
-    /// How much your health decays by.
-    /// </summary>
-    [SerializeField]
-    private int decayIncrement;
 
     public float attackFrames { get { return ((float)attackStartUpFrames + (float)attackActiveFrames + (float)attackRecoveryFrames) / 60f; } }
 
@@ -82,7 +68,6 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
     {
         RegisterInputs();
         lastDirection = -Vector2.one;
-        decayTime = decayTimer;
     }
 
     private void RegisterInputs()
@@ -101,17 +86,6 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
     // Update is called once per frame
     void Update()
     {
-        if(decayTime > 0)
-        {
-            decayTime -= Time.deltaTime;
-        }
-        else
-        {
-            Debug.Log("subtract health");
-            CurrentHealth -= decayIncrement;
-            decayTime = decayTimer;
-        }
-
         if (isMoving)
         {
             transform.position += new Vector3(direction.x, direction.z, 0) * moveSpeed * Time.deltaTime;
@@ -151,6 +125,8 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
         yield return new WaitForSeconds(attackRecoveryFrames / 60f);
         isAttacking = false;
     }
+
+
     public override void OnDeath()
     {
         throw new NotImplementedException();

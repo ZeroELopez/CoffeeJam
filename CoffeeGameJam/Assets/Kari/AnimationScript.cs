@@ -31,11 +31,16 @@ namespace CoffeeJam.Visuals
     }
     public class AnimationScript : MonoBehaviour
     {
+        Vector3 originalScale;
         Animator thisAnimator;
+
+        [SerializeField] PlayerEntitySecond player;
         // Start is called before the first frame update
         void Start()
         {
             thisAnimator = GetComponent<Animator>();
+            originalScale = transform.localScale;
+           
         }
 
         Vector3 prevPos = new Vector3();
@@ -53,19 +58,48 @@ namespace CoffeeJam.Visuals
 
             CharacterStates newState = FindState();
 
+            if (newState >= CharacterStates.Attack && newState <= CharacterStates.Attack3)
+            {
+                float finalTime = (Time.time - player.startTime) / player.attackFrames;
+                thisAnimator.Play((state = newState).ToString(), 0, finalTime);
+
+                Debug.Log(finalTime);
+
+                return;
+            }
             thisAnimator.Play((state = newState).ToString(), 0);
+
+
         }
 
         CharacterStates FindState()
         {
+            if (!player.isAttacking &&
+               (state >= CharacterStates.Attack && state <= CharacterStates.Attack3))
+                state = CharacterStates.Count;
+
+
             if (state == CharacterStates.Hitstun || state == CharacterStates.Death || 
                 (state >= CharacterStates.Attack && state <= CharacterStates.Attack3))
                 return state;
 
+            if (player.isAttacking)
+            {
+                StartAttack();
+                return state;
+            }
+
+
             CharacterStates newState = CharacterStates.Idle;
+
 
             if (prevPos != transform.position)
             {
+                if (transform.position.x > prevPos.x)
+                    transform.localScale = new Vector3(originalScale.x * -1, originalScale.y, originalScale.z);
+                else if (transform.position.x < prevPos.x)
+                    transform.localScale = originalScale;
+
                 newState = CharacterStates.Walking;
                 prevPos = transform.position;
             }
