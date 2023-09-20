@@ -20,7 +20,7 @@ namespace CoffeeJam.Visuals
             if (lookAt == null)
                 return;
 
-            transform.LookAt(lookAt, Vector3.forward);
+            transform.LookAt(lookAt, -Vector3.forward);
         }
     }
 }
