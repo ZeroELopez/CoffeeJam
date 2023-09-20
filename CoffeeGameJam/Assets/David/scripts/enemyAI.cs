@@ -1,13 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class enemyAI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
         public NavMeshAgent agent;
 
         public Transform Player;
@@ -15,9 +12,10 @@ public class enemyAI : MonoBehaviour
         public LayerMask whatIsGround, whatIsPlayer;
 
     //Looking for Player
-    public Vector walking;
+    public Vector3 walkPoint;
     bool walkSet;
-    public float walkRange;
+    public bool walkRange;
+    public float walkPointRange;
 
     //Attacking
     public float timeforAttack;
@@ -29,16 +27,16 @@ public class enemyAI : MonoBehaviour
 
     private void Awake()
     {
-        Player = GameObject.Find('Pla').transform;
-        agemt = GetComponent<NavMeshAgent>;
+        Player = GameObject.Find("Pla").transform;
+        agent = GetComponent<NavMeshAgent>();
 
     }
 
     private void Update()
     {
         //Check in range and attack range
-        playerInSigntRange = Physics.CheckShpere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckShpere(transform.position, sightRange, whatIsPlayer);
+        playerInSigntRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+        playerInAttackRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
 
         if (!playerInSigntRange && !playerInAttackRange) looking();
         if (playerInSigntRange && !playerInAttackRange) chasing();
@@ -49,11 +47,11 @@ public class enemyAI : MonoBehaviour
 
     private void looking()
     {
-        if (!walkRange) search()
+        if (!walkRange) search();
         if (walkRange)
             agent.SetDestination(walkPoint);
 
-        Vector3 distanceToWalkPoint = transform.position - walkRange;
+        Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         if (distanceToWalkPoint.magnitude < 1f)
             walkRange = false;
@@ -65,8 +63,9 @@ public class enemyAI : MonoBehaviour
     {
         float ramdomz = Random.Range(-walkPointRange, walkPointRange);
         float ramdony = Random.Range(-walkPointRange, walkPointRange);
+        float randomX = Random.Range(-walkPointRange, walkPointRange);
 
-        walkRange = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.x)
+        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.x);
 
     }
 
@@ -77,29 +76,23 @@ public class enemyAI : MonoBehaviour
 
     }
 
-    priviate void Attacking()
+    private void Attacking()
     {
-        agent.SetDestination(transform.positon);
+        agent.SetDestination(transform.position);
 
-        transform.LookAt(player);
+        transform.LookAt(Player);
 
         if (!attackedAlready)
         {
             attackedAlready = true;
-            invoke(nameof(resetAttack), timeforAttack);
+            Invoke(nameof(resetAttack), timeforAttack);
         }
     }
     private void resetAttack()
     {
 
-    }
      attackedAlready = false;
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
