@@ -9821,6 +9821,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3173099119767428476, guid: 399fa4a0a3bfd2e4cbc362ea58b714a0, type: 3}
+      propertyPath: decayTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173099119767428476, guid: 399fa4a0a3bfd2e4cbc362ea58b714a0, type: 3}
+      propertyPath: decayIncrement
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5744454786367094565, guid: 399fa4a0a3bfd2e4cbc362ea58b714a0, type: 3}
       propertyPath: m_Name
       value: CharacterTemp

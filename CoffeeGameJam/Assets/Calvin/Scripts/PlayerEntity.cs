@@ -26,14 +26,30 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
     [SerializeField]
     private int attackRecoveryFrames;
 
-    private bool isAttacking;
+    /// <summary>
+    /// How often to decrement health by
+    /// </summary>
+    [SerializeField]
+    private float decayTimer;
+
+    private float decayTime;
+
+    /// <summary>
+    /// How much your health decays by.
+    /// </summary>
+    [SerializeField]
+    private int decayIncrement;
+
+    public float attackFrames { get { return ((float)attackStartUpFrames + (float)attackActiveFrames + (float)attackRecoveryFrames) / 60f; } }
+
+    public bool isAttacking;
 
     public void OnAttackInteract(InputAction.CallbackContext context)
     {
-        if(context.canceled)
+        if (context.canceled)
         {
             //TODO: Contextual interaction and attack
-            if(!isAttacking)
+            if (!isAttacking)
             {
                 StartCoroutine(AttackCoroutine());
             }
@@ -49,12 +65,12 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
             Vector2 readVector = context.ReadValue<Vector2>();
             direction = (new Vector3(readVector.x, 0, readVector.y));
 
-            if(direction.x != 0)
+            if (direction.x != 0)
             {
                 lastDirection.x = Mathf.Sign(direction.x);
             }
 
-            if(direction.z != 0)
+            if (direction.z != 0)
             {
                 lastDirection.y = Mathf.Sign(direction.z);
             }
@@ -66,6 +82,7 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
     {
         RegisterInputs();
         lastDirection = -Vector2.one;
+        decayTime = decayTimer;
     }
 
     private void RegisterInputs()
@@ -84,29 +101,43 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
     // Update is called once per frame
     void Update()
     {
-        if(isMoving)
+        if(decayTime > 0)
+        {
+            decayTime -= Time.deltaTime;
+        }
+        else
+        {
+            Debug.Log("subtract health");
+            CurrentHealth -= decayIncrement;
+            decayTime = decayTimer;
+        }
+
+        if (isMoving)
         {
             transform.position += new Vector3(direction.x, direction.z, 0) * moveSpeed * Time.deltaTime;
         }
     }
 
+    public float startTime;
+
     private IEnumerator AttackCoroutine()
     {
+        startTime = Time.time;
         isAttacking = true;
 
         SpriteRenderer rendererTemp = attackHitbox.GetComponent<SpriteRenderer>();
 
         //Wait for start up frames
         yield return new WaitForSeconds(attackStartUpFrames / 60f);
-        
-        attackHitbox.transform.localPosition = new Vector3(lastDirection.x * attackHitbox.size.x/2, lastDirection.y * attackHitbox.size.y/2, 0);
+
+        attackHitbox.transform.localPosition = new Vector3(lastDirection.x * attackHitbox.size.x / 2, lastDirection.y * attackHitbox.size.y / 2, 0);
         attackHitbox.enabled = true;
 
         if (rendererTemp != null)
         {
             rendererTemp.enabled = true;
         }
-        
+
         //Active Frames
         yield return new WaitForSeconds(attackActiveFrames / 60f);
         attackHitbox.enabled = false;
@@ -120,8 +151,6 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
         yield return new WaitForSeconds(attackRecoveryFrames / 60f);
         isAttacking = false;
     }
-
-
     public override void OnDeath()
     {
         throw new NotImplementedException();
