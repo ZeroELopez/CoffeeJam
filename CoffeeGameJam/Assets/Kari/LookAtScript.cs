@@ -7,7 +7,9 @@ namespace CoffeeJam.Visuals
     public class LookAtScript : MonoBehaviour
     {
         public Transform lookAt;
+        Vector3 lookAtV;
 
+        [SerializeField] bool ignoreX;
         // Start is called before the first frame update
         void Start()
         {
@@ -19,8 +21,12 @@ namespace CoffeeJam.Visuals
         {
             if (lookAt == null)
                 return;
+            lookAtV = lookAt.position;
 
-            transform.LookAt(lookAt, -Vector3.forward);
+            if (ignoreX)
+                lookAtV.x = transform.position.x;
+
+            transform.LookAt(lookAtV, -Vector3.forward);
         }
     }
 }
