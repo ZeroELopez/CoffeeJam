@@ -34,7 +34,7 @@ namespace CoffeeJam.Visuals
         Vector3 originalScale;
         Animator thisAnimator;
 
-        [SerializeField] PlayerEntitySecond player;
+        //[SerializeField] Entity player;
         // Start is called before the first frame update
         void Start()
         {
@@ -51,19 +51,12 @@ namespace CoffeeJam.Visuals
         // Update is called once per frame
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.A))
-                StartAttack();
-            if (Input.GetKeyDown(KeyCode.S))
-                Neutral();
-
             CharacterStates newState = FindState();
 
             if (newState >= CharacterStates.Attack && newState <= CharacterStates.Attack3)
             {
-                float finalTime = (Time.time - player.startTime) / player.attackFrames;
+                float finalTime = (Time.time - AttackstartTime) / attackFrames/*player.attackFrames*/;
                 thisAnimator.Play((state = newState).ToString(), 0, finalTime);
-
-                Debug.Log(finalTime);
 
                 return;
             }
@@ -74,20 +67,10 @@ namespace CoffeeJam.Visuals
 
         CharacterStates FindState()
         {
-            if (!player.isAttacking &&
-               (state >= CharacterStates.Attack && state <= CharacterStates.Attack3))
-                state = CharacterStates.Count;
-
 
             if (state == CharacterStates.Hitstun || state == CharacterStates.Death || 
                 (state >= CharacterStates.Attack && state <= CharacterStates.Attack3))
                 return state;
-
-            if (player.isAttacking)
-            {
-                StartAttack();
-                return state;
-            }
 
 
             CharacterStates newState = CharacterStates.Idle;
@@ -107,17 +90,26 @@ namespace CoffeeJam.Visuals
             return newState;
         }
 
-        void StartAttack()
+        float AttackstartTime;
+        float attackFrames;
+
+        public void StartAttack(EntityState prevState)
         {
             state = CharacterStates.Attack + (attackNumber < 3 ? attackNumber : attackNumber = 0);
+            AttackstartTime = Time.time;
+            attackFrames = EntityEventTracker.player.attackFrames;
             attackNumber++;
         }
 
-        void Hurtstun() => state = CharacterStates.Hitstun;
+        public void Hitstun() => state = CharacterStates.Hitstun;
 
-        void Death() => state = CharacterStates.Death;
+        public void Death() => state = CharacterStates.Death;
 
-        void Neutral() => state = CharacterStates.Idle;
+        public void Neutral()
+        {
+            prevPos = transform.position;
+            state = CharacterStates.Idle;
+        }
 
     }
 

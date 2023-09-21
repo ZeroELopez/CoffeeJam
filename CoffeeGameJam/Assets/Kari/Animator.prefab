@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3713914757531005949}
   - component: {fileID: 5939378944537666501}
   - component: {fileID: 8051969786933279053}
+  - component: {fileID: 5542057309518170861}
+  - component: {fileID: 5487409297428821095}
   m_Layer: 0
   m_Name: Animator
   m_TagString: Untagged
@@ -100,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookAt: {fileID: 0}
+  ignoreX: 1
 --- !u!114 &5939378944537666501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,3 +138,111 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5542057309518170861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5982242217098956761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ed50064fe4e1946938b2745fc680c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0017292732
+      value: 1.0130423
+      inSlope: 0.42574528
+      outSlope: 0.42574528
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.10654239
+    - serializedVersion: 3
+      time: 1.0085449
+      value: 0.0068893433
+      inSlope: -3.1775746
+      outSlope: -3.1775746
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.09166659
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  multiplier: 0.2
+  length: 1
+--- !u!114 &5487409297428821095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5982242217098956761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bed8b46265c09b409dcfb2dabb8c41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  script: {fileID: 0}
+  onHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ObjectShake, Assembly-CSharp
+        m_MethodName: Shake
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5939378944537666501}
+        m_TargetAssemblyTypeName: CoffeeJam.Visuals.AnimationScript, Assembly-CSharp
+        m_MethodName: Hitstun
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onAttack:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5939378944537666501}
+        m_TargetAssemblyTypeName: CoffeeJam.Visuals.AnimationScript, Assembly-CSharp
+        m_MethodName: StartAttack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onAttackEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5939378944537666501}
+        m_TargetAssemblyTypeName: CoffeeJam.Visuals.AnimationScript, Assembly-CSharp
+        m_MethodName: Neutral
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
