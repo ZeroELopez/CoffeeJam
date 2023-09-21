@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class EnemyEntity : Entity
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    [SerializeField]
+    private int collisionDamage;
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.collider.tag == "Player")
+        if (other.tag == "Player")
         {
-            var attack = collision.collider.GetComponent<Attack>();
+            var attack = other.GetComponent<Attack>();
+
             if (attack != null)
             {
                 CurrentHealth -= attack.Damage;
                 Debug.Log("Damage Enemy");
+            }
+
+            var player = other.GetComponent<PlayerEntity>();
+            if (player != null && !player.IsInvincible)
+            {
+                player.CurrentHealth -= collisionDamage;
+                player.StartCoroutine(player.Invincibility());
             }
         }
     }
@@ -20,9 +31,11 @@ public class EnemyEntity : Entity
     public override void OnDeath()
     {
         Destroy(gameObject);
+        Spawner.Instance.SpawnItem(gameObject.transform.position);
     }
 
     protected override void Initialize()
     {
+        // leave empty for now.
     }
 }

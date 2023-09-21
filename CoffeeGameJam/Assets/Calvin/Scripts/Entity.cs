@@ -32,6 +32,7 @@ public abstract class Entity : MonoBehaviour
     protected int invincibilityFrames;
 
     protected bool isInvincible;
+    public bool IsInvincible => isInvincible;
 
     public void Start()
     {
@@ -51,12 +52,14 @@ public abstract class Entity : MonoBehaviour
 
     public abstract void OnDeath();
 
-    protected IEnumerator Invincibility()
+    public IEnumerator Invincibility()
     {
         isInvincible = true;
 
+        Debug.Log("Invincibility on");
         yield return new WaitForSeconds(invincibilityFrames / 60f);
 
         isInvincible = false;
+        Debug.Log("Invincibility off");
     }
 }

@@ -107,7 +107,7 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
         }
         else
         {
-            Debug.Log("subtract health");
+            //Debug.Log("subtract health");
             CurrentHealth -= decayIncrement;
             decayTime = decayTimer;
         }
