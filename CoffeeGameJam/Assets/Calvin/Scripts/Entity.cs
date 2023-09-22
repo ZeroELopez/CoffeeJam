@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,9 @@ public abstract class Entity : MonoBehaviour
 {
     [SerializeField]
     protected int baseHealth;
+    public int BaseHealth => baseHealth;
+
+    public Action OnHealthChanged;
 
     private int currentHealth;
     public int CurrentHealth
@@ -19,6 +23,7 @@ public abstract class Entity : MonoBehaviour
             if (currentHealth != value)
             {
                 currentHealth = value;
+                OnHealthChanged?.Invoke();
             }
 
             if(currentHealth <= 0)
