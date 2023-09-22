@@ -74,11 +74,14 @@ public struct EnemyState : EntityState
     public bool ChangedState(Entity e, out List<string> logs)
     {
         EnemyEntity b = (EnemyEntity)e;
-
         logs = new List<string>();
 
         if (CurrentHealth != b.CurrentHealth)
+        {
+            Debug.Log("Health Changed");
+            BucketScript.instance.SpawnObject(UsableObjectBucket.LastUsedSprite, e.transform.position);
             logs.Add("onHit");
+        }
 
         return logs.Count > 0;
     }
@@ -105,11 +108,13 @@ public struct PlayerState : EntityState
 
         logs = new List<string>();
 
-        if (CurrentHealth != b.CurrentHealth)
+        if (CurrentHealth > b.CurrentHealth)
             logs.Add("onHit");
 
         if (isAttacking != b.isAttacking)
         {
+            UsableObjectBucket.ObjectNearby(e.transform.position, 2, out UsableObject obj);
+
             if (b.isAttacking)
                 logs.Add("onAttack");
             else
