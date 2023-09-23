@@ -5,7 +5,7 @@ using UnityEngine.Animations;
 
 public class ObjectShake : MonoBehaviour
 {
-    public AnimationCurve animation;
+    public AnimationCurve animationCurve;
     public float multiplier;
     public float length;
 
@@ -16,7 +16,7 @@ public class ObjectShake : MonoBehaviour
     {
         origins = transform.localPosition;
 
-        time = 0;
+        //time = 0;
     }
 
     float time = float.MaxValue;
@@ -27,7 +27,7 @@ public class ObjectShake : MonoBehaviour
         {
             Vector3 movement = new Vector3(Random.Range(-multiplier, multiplier), Random.Range(-multiplier, multiplier));
 
-            transform.localPosition = origins + (movement * animation.Evaluate(time / length));
+            transform.localPosition = origins + (movement * animationCurve.Evaluate(time / length));
 
             time += Time.deltaTime;
         }        

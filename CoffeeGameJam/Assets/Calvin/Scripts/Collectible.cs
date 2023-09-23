@@ -12,7 +12,11 @@ public class Collectible : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<PlayerEntity>().CurrentHealth += healthValue;
+            var player = collision.gameObject.GetComponent<PlayerEntity>();
+            if (player != null)
+            { 
+                player.CurrentHealth += healthValue;
+            }
             Destroy(gameObject);
         }
     }
