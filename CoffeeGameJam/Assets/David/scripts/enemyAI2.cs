@@ -7,7 +7,9 @@ public class enemyAI2 : MonoBehaviour
     public GameObject player;
     public float speed;
 
-    public float distance;
+    private float distance;
+    public float range;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,8 +25,12 @@ public class enemyAI2 : MonoBehaviour
         //direction.Normalize();
         //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
-        //transform.rotation = Quaternion.Euler(Vector3.forward * angle);
+
+        if (distance < range)
+        {
+            transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
+            //transform.rotation = Quaternion.Euler(Vector3.forward * angle);
+        }
         
 
         
