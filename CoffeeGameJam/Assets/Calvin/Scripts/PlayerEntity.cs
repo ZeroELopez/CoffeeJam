@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerEntity : Entity, InputController.IPlayerControllerActions
 {
@@ -153,6 +154,6 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
     }
     public override void OnDeath()
     {
-        throw new NotImplementedException();
+        SceneManager.LoadScene("YouLose");
     }
 }

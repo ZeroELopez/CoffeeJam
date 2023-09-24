@@ -1,3 +1,4 @@
+using Assets.Scripts.Base.Events;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,12 +31,13 @@ public class EnemyEntity : Entity
 
     public override void OnDeath()
     {
-        Destroy(gameObject);
+        EventHub.Instance.PostEvent(new EnemyDisposed());
         Spawner.Instance.SpawnItem(gameObject.transform.position);
+        Destroy(gameObject);
     }
 
     protected override void Initialize()
     {
-        // leave empty for now.
+        EventHub.Instance.PostEvent(new EnemySpawned());
     }
 }
