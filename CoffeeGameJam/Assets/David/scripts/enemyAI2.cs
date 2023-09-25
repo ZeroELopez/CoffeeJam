@@ -7,12 +7,20 @@ public class enemyAI2 : MonoBehaviour
     public GameObject player;
     public float speed;
 
-    public float distance;
+    private float distance;
+    public float range;
+
+    [SerializeField]
+    private Transform[] patrolRoute;
+    private int patrolIndex;
+
+    [SerializeField]
+    private float patrolTolerance = 0.001f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindFirstObjectByType<PlayerEntity>().gameObject;
     }
 
     // Update is called once per frame
@@ -23,10 +31,27 @@ public class enemyAI2 : MonoBehaviour
         //direction.Normalize();
         //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
-        //transform.rotation = Quaternion.Euler(Vector3.forward * angle);
-        
 
-        
+        if (distance < range)
+        {
+            transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
+            //transform.rotation = Quaternion.Euler(Vector3.forward * angle);
+        }
+        else
+        {
+            if(patrolRoute.Length > 0)
+            {
+                transform.position = Vector2.MoveTowards(this.transform.position, patrolRoute[patrolIndex].position, speed * Time.deltaTime);
+                if (Vector2.Distance(patrolRoute[patrolIndex].position, transform.position) <= patrolTolerance)
+                {
+                    patrolIndex = (patrolIndex + 1) % patrolRoute.Length;
+                }
+            }
+        }        
+    }
+
+    public void SetPatrolRoute(Transform[] route)
+    {
+        patrolRoute = route;
     }
 }

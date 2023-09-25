@@ -79,7 +79,8 @@ public struct EnemyState : EntityState
         if (CurrentHealth != b.CurrentHealth)
         {
             Debug.Log("Health Changed");
-            BucketScript.instance.SpawnObject(UsableObjectBucket.LastUsedSprite, e.transform.position);
+       
+if (BucketScript.instance != null) BucketScript.instance.SpawnObject(UsableObjectBucket.LastUsedSprite, e.transform.position);
             logs.Add("onHit");
         }
 

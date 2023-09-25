@@ -246,14 +246,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseHealth: 100
-  invincibilityFrames: 30
+  invincibilityFrames: 60
   moveSpeed: 10
   attackHitbox: {fileID: 2346134139195551859}
   attackStartUpFrames: 0
   attackActiveFrames: 16
   attackRecoveryFrames: 6
-  decayTimer: 0
-  decayIncrement: 0
+  decayTimer: 1
+  decayIncrement: 1
+  powerGaugeBase: 2
+  powerUpTimer: 2
+  moveSpeedBoost: 5
   isAttacking: 0
   startTime: 0
 --- !u!61 &7456423348199026824
