@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class LevelExit : MonoBehaviour, ISubscribable<EnemySpawned>, ISubscribable<EnemyDisposed>
 {
     private int unlockThreshold;
+    public string NextScene;
 
     public void Awake()
     {
@@ -28,7 +29,7 @@ public class LevelExit : MonoBehaviour, ISubscribable<EnemySpawned>, ISubscribab
         {
             if (unlockThreshold <= 0)
             {
-                SceneManager.LoadScene("YouWin");
+                SceneManager.LoadScene(NextScene);
             }
             else
             {
@@ -56,6 +57,7 @@ public class LevelExit : MonoBehaviour, ISubscribable<EnemySpawned>, ISubscribab
 
     public void HandleEvent(EnemyDisposed evt)
     {
+        Debug.Log("Enemy Killed");
         unlockThreshold--;
     }
 }

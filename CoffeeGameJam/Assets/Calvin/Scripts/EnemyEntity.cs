@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(enemyAI2))]
 public class EnemyEntity : Entity
 {
+
     [SerializeField]
     private int collisionDamage;
 
@@ -19,20 +21,23 @@ public class EnemyEntity : Entity
                 CurrentHealth -= attack.Damage;
                 Debug.Log("Damage Enemy");
             }
+        }
+    }
 
-            var player = other.GetComponent<PlayerEntity>();
-            if (player != null && !player.IsInvincible)
-            {
-                player.CurrentHealth -= collisionDamage;
-                player.StartCoroutine(player.Invincibility());
-            }
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        var player = other.GetComponent<PlayerEntity>();
+        if (player != null && !player.IsInvincible)
+        {
+            player.CurrentHealth -= collisionDamage;
+            player.StartCoroutine(player.Invincibility());
         }
     }
 
     public override void OnDeath()
     {
         EventHub.Instance.PostEvent(new EnemyDisposed());
-        Spawner.Instance.SpawnItem(gameObject.transform.position);
+        ItemSpawner.Instance.SpawnItem(gameObject.transform.position);
         Destroy(gameObject);
     }
 

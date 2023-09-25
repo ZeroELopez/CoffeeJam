@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
 public class PlayerEntity : Entity, InputController.IPlayerControllerActions
@@ -40,6 +41,32 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
     /// </summary>
     [SerializeField]
     private int decayIncrement;
+
+    [SerializeField]
+    private int powerGaugeBase;
+    private int currentPowerGauge;
+    public int PowerGauge
+    {
+        get
+        {
+            return currentPowerGauge;
+        }
+        set
+        {
+            currentPowerGauge = value;
+            if(currentPowerGauge >= powerGaugeBase)
+            {
+                StartCoroutine(PowerUp());
+            }
+        }
+    }
+
+    [SerializeField]
+    private float powerUpTimer;
+
+    [SerializeField]
+    private float moveSpeedBoost;
+    private float speedBoost;
 
     public float attackFrames { get { return ((float)attackStartUpFrames + (float)attackActiveFrames + (float)attackRecoveryFrames) / 60f; } }
 
@@ -84,6 +111,10 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
         RegisterInputs();
         lastDirection = -Vector2.one;
         decayTime = decayTimer;
+
+        var playerHUD = GameObject.FindFirstObjectByType<PlayerHUD>();
+        playerHUD.PlayerToTrack = this;
+        this.OnHealthChanged += playerHUD.UpdateHUD;
     }
 
     private void RegisterInputs()
@@ -97,6 +128,7 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
         controls.PlayerController.AttackInteract.started += OnAttackInteract;
         controls.PlayerController.AttackInteract.performed += OnAttackInteract;
         controls.PlayerController.AttackInteract.canceled += OnAttackInteract;
+
     }
 
     // Update is called once per frame
@@ -115,7 +147,7 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
 
         if (isMoving)
         {
-            transform.position += new Vector3(direction.x, direction.z, 0) * moveSpeed * Time.deltaTime;
+            transform.position += new Vector3(direction.x, direction.z, 0) * (moveSpeed + speedBoost) * Time.deltaTime;
         }
     }
 
@@ -155,5 +187,14 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
     public override void OnDeath()
     {
         SceneManager.LoadScene("YouLose");
+    }
+
+    private IEnumerator PowerUp()
+    {
+        Debug.Log("POWER UP!");
+        speedBoost = moveSpeedBoost;
+        yield return new WaitForSeconds(powerUpTimer);
+        speedBoost = 0;
+        currentPowerGauge = 0;
     }
 }

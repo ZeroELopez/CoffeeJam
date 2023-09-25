@@ -3,15 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [DisallowMultipleComponent]
-public class Spawner : Singleton<Spawner>
+public class ItemSpawner : Singleton<ItemSpawner>
 {
     [SerializeField]
-    private GameObject EnemyPrefab;
-
-    [SerializeField]
     private GameObject ItemPrefab;
-
-    public Transform[] EnemySpawnLocations;
 
     public void Start()
     {

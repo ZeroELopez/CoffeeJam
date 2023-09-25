@@ -9,15 +9,10 @@ public class PlayerHUD : MonoBehaviour
     private TextMeshProUGUI temporaryIndicator;
 
     [SerializeField]
-    private PlayerEntity playerToTrack;
-
-    public void Start()
-    {
-        playerToTrack.OnHealthChanged += UpdateHUD;
-        UpdateHUD();
-    }
+    public PlayerEntity PlayerToTrack;
+        
     public void UpdateHUD()
     {
-        temporaryIndicator.SetText("Health: " + playerToTrack.CurrentHealth + " / " + playerToTrack.BaseHealth);
+        temporaryIndicator.SetText("Health: " + PlayerToTrack.CurrentHealth + " / " + PlayerToTrack.BaseHealth);
     }    
 }
