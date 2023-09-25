@@ -1,0 +1,354 @@
+{
+    "version": {
+        "major": 5,
+        "minor": 1
+    },
+    "project": {
+        "format": {
+            "extension": "png"
+        },
+        "camera": {
+            "width": 1920,
+            "height": 1080,
+            "field": 0,
+            "framerate": 24.0,
+            "pixelaspectratio": 1.0,
+            "antialiasing": 1
+        },
+        "clip": {
+            "name": "Clip_003",
+            "width": 1080,
+            "height": 1920,
+            "dpi": 72,
+            "framerate": 24.0,
+            "pixelaspectratio": 1.0,
+            "image-count": 18,
+            "bg": {
+                "red": 255,
+                "green": 255,
+                "blue": 255
+            },
+            "markin": {
+                "status": false,
+                "value": 0
+            },
+            "markout": {
+                "status": false,
+                "value": 0
+            },
+            "camera": {
+                "mode": 2,
+                "profile": "2 0 1 0 0 1 1 ",
+                "motion-blur": 0.0,
+                "lock-all": false,
+                "lock-x": false,
+                "lock-y": false,
+                "lock-angle": false,
+                "lock-scale": false,
+                "points": [],
+                "positions": [
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    }
+                ]
+            },
+            "layers": [
+                {
+                    "name": "NormalZombie",
+                    "visible": true,
+                    "position": 0,
+                    "opacity": 255,
+                    "start": 0,
+                    "end": 17,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 0,
+                            "instance-name": "1",
+                            "file": "[000] NormalZombie/[0000] NormalZombie.png",
+                            "images": [
+                                0
+                            ]
+                        },
+                        {
+                            "instance-index": 1,
+                            "instance-name": "2",
+                            "file": "[000] NormalZombie/[0001] NormalZombie.png",
+                            "images": [
+                                1
+                            ]
+                        },
+                        {
+                            "instance-index": 2,
+                            "instance-name": "3",
+                            "file": "[000] NormalZombie/[0002] NormalZombie.png",
+                            "images": [
+                                2
+                            ]
+                        },
+                        {
+                            "instance-index": 3,
+                            "instance-name": "4",
+                            "file": "[000] NormalZombie/[0003] NormalZombie.png",
+                            "images": [
+                                3
+                            ]
+                        },
+                        {
+                            "instance-index": 4,
+                            "instance-name": "5",
+                            "file": "[000] NormalZombie/[0004] NormalZombie.png",
+                            "images": [
+                                4
+                            ]
+                        },
+                        {
+                            "instance-index": 5,
+                            "instance-name": "6",
+                            "file": "[000] NormalZombie/[0005] NormalZombie.png",
+                            "images": [
+                                5
+                            ]
+                        },
+                        {
+                            "instance-index": 6,
+                            "instance-name": "7",
+                            "file": "[000] NormalZombie/[0006] NormalZombie.png",
+                            "images": [
+                                6
+                            ]
+                        },
+                        {
+                            "instance-index": 7,
+                            "instance-name": "8",
+                            "file": "[000] NormalZombie/[0007] NormalZombie.png",
+                            "images": [
+                                7
+                            ]
+                        },
+                        {
+                            "instance-index": 8,
+                            "instance-name": "9",
+                            "file": "[000] NormalZombie/[0008] NormalZombie.png",
+                            "images": [
+                                8
+                            ]
+                        },
+                        {
+                            "instance-index": 9,
+                            "instance-name": "10",
+                            "file": "[000] NormalZombie/[0009] NormalZombie.png",
+                            "images": [
+                                9
+                            ]
+                        },
+                        {
+                            "instance-index": 10,
+                            "instance-name": "11",
+                            "file": "[000] NormalZombie/[0010] NormalZombie.png",
+                            "images": [
+                                10
+                            ]
+                        },
+                        {
+                            "instance-index": 11,
+                            "instance-name": "12",
+                            "file": "[000] NormalZombie/[0011] NormalZombie.png",
+                            "images": [
+                                11
+                            ]
+                        },
+                        {
+                            "instance-index": 12,
+                            "instance-name": "13",
+                            "file": "[000] NormalZombie/[0012] NormalZombie.png",
+                            "images": [
+                                12
+                            ]
+                        },
+                        {
+                            "instance-index": 13,
+                            "instance-name": "14",
+                            "file": "[000] NormalZombie/[0013] NormalZombie.png",
+                            "images": [
+                                13
+                            ]
+                        },
+                        {
+                            "instance-index": 14,
+                            "instance-name": "15",
+                            "file": "[000] NormalZombie/[0014] NormalZombie.png",
+                            "images": [
+                                14
+                            ]
+                        },
+                        {
+                            "instance-index": 15,
+                            "instance-name": "16",
+                            "file": "[000] NormalZombie/[0015] NormalZombie.png",
+                            "images": [
+                                15
+                            ]
+                        },
+                        {
+                            "instance-index": 16,
+                            "instance-name": "17",
+                            "file": "[000] NormalZombie/[0016] NormalZombie.png",
+                            "images": [
+                                16
+                            ]
+                        },
+                        {
+                            "instance-index": 17,
+                            "instance-name": "18",
+                            "file": "[000] NormalZombie/[0017] NormalZombie.png",
+                            "images": [
+                                17
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "Untitled Layer1",
+                    "visible": true,
+                    "position": 12,
+                    "opacity": 255,
+                    "start": 0,
+                    "end": 0,
+                    "pre-behavior": 0,
+                    "post-behavior": 3,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 0,
+                            "instance-name": "1",
+                            "file": "[012] Untitled Layer1/[0000] Untitled Layer1.png",
+                            "images": [
+                                0
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                }
+            ]
+        }
+    }
+}
