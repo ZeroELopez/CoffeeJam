@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System;
 
 public class UsableObjectBucket : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class UsableObjectBucket : MonoBehaviour
                 obj.Use();
 
                 instance.onUsed?.Invoke(instance.usableObjects[i].spriteRenderer.sprite);
+                onUsedAction?.Invoke(instance.usableObjects[i].spriteRenderer.sprite);//Because the top one didn't work
                 LastUsedSprite = instance.usableObjects[i].spriteRenderer.sprite;
 
                 instance.usedObjects.Enqueue(instance.usableObjects[i]);
@@ -61,6 +63,7 @@ public class UsableObjectBucket : MonoBehaviour
     public UnityEvent onRespawn;
 
     public UnityEvent<Sprite> onUsed;
+    public static event Action<Sprite> onUsedAction;
 
     public UnityEvent onStart;
 
