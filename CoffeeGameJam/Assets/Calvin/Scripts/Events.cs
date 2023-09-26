@@ -9,4 +9,12 @@ namespace Assets.Scripts.Base.Events
     {
         //Intentionally Empty class.
     }
+
+    public class PlayerPowerUpStart : DispatchableEvent { }
+    public class PlayerPowerUpEnd : DispatchableEvent { }
+
+    public class  TogglePause : DispatchableEvent
+    {
+        
+    }
 }

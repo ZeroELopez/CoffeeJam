@@ -131,4 +131,9 @@ public class PlayerEntitySecond : Entity, InputController.IPlayerControllerActio
     {
         throw new NotImplementedException();
     }
+
+    public void OnPause(InputAction.CallbackContext context)
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -1,3 +1,4 @@
+using Assets.Scripts.Base.Events;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -128,7 +129,12 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
         controls.PlayerController.AttackInteract.started += OnAttackInteract;
         controls.PlayerController.AttackInteract.performed += OnAttackInteract;
         controls.PlayerController.AttackInteract.canceled += OnAttackInteract;
+        controls.PlayerController.Pause.canceled += OnPause;
+    }
 
+    public void OnPause(InputAction.CallbackContext obj)
+    {
+        EventHub.Instance.PostEvent(new TogglePause());
     }
 
     // Update is called once per frame
@@ -191,10 +197,12 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
 
     private IEnumerator PowerUp()
     {
+        EventHub.Instance.PostEvent(new PlayerPowerUpStart());
         Debug.Log("POWER UP!");
         speedBoost = moveSpeedBoost;
         yield return new WaitForSeconds(powerUpTimer);
         speedBoost = 0;
         currentPowerGauge = 0;
+        EventHub.Instance.PostEvent(new PlayerPowerUpEnd());
     }
 }

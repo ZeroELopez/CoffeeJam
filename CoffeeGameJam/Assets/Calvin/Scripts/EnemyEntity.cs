@@ -4,17 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(enemyAI2))]
-public class EnemyEntity : Entity
+public class EnemyEntity : Entity, ISubscribable<PlayerPowerUpStart>, ISubscribable<PlayerPowerUpEnd>
 {
 
     [SerializeField]
     private int collisionDamage;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.tag == "Player")
+        if (other.collider.tag == "Player")
         {
-            var attack = other.GetComponent<Attack>();
+            var attack = other.collider.GetComponent<Attack>();
 
             if (attack != null)
             {
@@ -24,9 +24,9 @@ public class EnemyEntity : Entity
         }
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnCollisionStay2D(Collision2D other)
     {
-        var player = other.GetComponent<PlayerEntity>();
+        var player = other.collider.GetComponent<PlayerEntity>();
         if (player != null && !player.IsInvincible)
         {
             player.CurrentHealth -= collisionDamage;
@@ -38,11 +38,35 @@ public class EnemyEntity : Entity
     {
         EventHub.Instance.PostEvent(new EnemyDisposed());
         ItemSpawner.Instance.SpawnItem(gameObject.transform.position);
-        Destroy(gameObject);
+        Unsubscribe();
+        Destroy(gameObject);        
     }
 
     protected override void Initialize()
     {
         EventHub.Instance.PostEvent(new EnemySpawned());
+        Subscribe();
+    }
+
+    public void Subscribe()
+    {
+        EventHub.Instance.Subscribe<PlayerPowerUpStart>(this);
+        EventHub.Instance.Subscribe<PlayerPowerUpEnd>(this);
+    }
+
+    public void Unsubscribe()
+    {
+        EventHub.Instance.Unsubscribe<PlayerPowerUpStart>(this);
+        EventHub.Instance.Unsubscribe<PlayerPowerUpEnd>(this);
+    }
+
+    public void HandleEvent(PlayerPowerUpStart evt)
+    {
+        GetComponent<enemyAI2>().speed /= 2;
+    }
+
+    public void HandleEvent(PlayerPowerUpEnd evt)
+    {
+        GetComponent<enemyAI2>().speed *= 2;
     }
 }
