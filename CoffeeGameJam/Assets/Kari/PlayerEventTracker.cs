@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.Events;
+using Assets.Scripts.Base.Events;
 
-public class EntityEventTracker : MonoBehaviour
+public class EntityEventTracker : MonoBehaviour, ISubscribable<PlayerPowerUpStart>, ISubscribable<PlayerPowerUpEnd>
 {
     public static PlayerEntity player;
 
@@ -21,12 +22,19 @@ public class EntityEventTracker : MonoBehaviour
 
         if (script.GetType() == typeof(EnemyEntity))
             prevState = new EnemyState((EnemyEntity)script);
+
+        Subscribe();
+
     }
+
+
 
     public UnityEvent<EntityState> onHit;
     public UnityEvent<EntityState> onAttack;
     public UnityEvent<EntityState> onAttackEnd;
 
+    public UnityEvent<EntityState> onPowerUp;
+    public UnityEvent<EntityState> onPowerDown;
 
     EntityState prevState;
     // Update is called once per frame
@@ -51,6 +59,27 @@ public class EntityEventTracker : MonoBehaviour
         }
     }
 
+    public void Subscribe()
+    {
+        EventHub.Instance.Subscribe<PlayerPowerUpStart>(this);
+        EventHub.Instance.Subscribe<PlayerPowerUpEnd>(this);
+    }
+
+    public void Unsubscribe()
+    {
+        EventHub.Instance.Unsubscribe<PlayerPowerUpStart>(this);
+        EventHub.Instance.Unsubscribe<PlayerPowerUpEnd>(this);
+    }
+
+    public void HandleEvent(PlayerPowerUpStart evt)
+    {
+        onPowerUp?.Invoke(prevState);
+    }
+
+    public void HandleEvent(PlayerPowerUpEnd evt)
+    {
+        onPowerDown?.Invoke(prevState);
+    }
 }
 
 
@@ -66,13 +95,21 @@ public struct EnemyState : EntityState
 {
     public int CurrentHealth { get; set; }
 
+    public PlayerEntity player;
+
+
     public EnemyState(EnemyEntity state)
     {
         CurrentHealth = state.CurrentHealth;
+        player = GameObject.FindObjectOfType<PlayerEntity>();
     }
 
     public bool ChangedState(Entity e, out List<string> logs)
     {
+        if (player == null)
+            player = GameObject.FindObjectOfType<PlayerEntity>();
+
+        
         EnemyEntity b = (EnemyEntity)e;
         logs = new List<string>();
 
@@ -106,6 +143,9 @@ public struct PlayerState : EntityState
     public bool ChangedState(Entity e, out List<string> logs)
     {
         PlayerEntity b = (PlayerEntity)e;
+
+        ShaderOveride.Saturation = ((float)b.CurrentHealth / (float)b.BaseHealth) * 1.5f;
+        //Debug.Log(ShaderOveride.Saturation);
 
         logs = new List<string>();
 
