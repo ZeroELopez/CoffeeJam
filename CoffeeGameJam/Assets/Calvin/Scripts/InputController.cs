@@ -44,6 +44,15 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""dc46f750-9cb5-4aa1-96df-7adbfaefc4f2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -178,6 +187,28 @@ public partial class @InputController: IInputActionCollection2, IDisposable
                     ""action"": ""Attack/Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fe38fd6b-46c4-4dd7-8ee6-47d90dc87bbb"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d0aa2fdd-9b1d-4d6f-a97e-1002c4ed1eec"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -188,6 +219,7 @@ public partial class @InputController: IInputActionCollection2, IDisposable
         m_PlayerController = asset.FindActionMap("PlayerController", throwIfNotFound: true);
         m_PlayerController_Move = m_PlayerController.FindAction("Move", throwIfNotFound: true);
         m_PlayerController_AttackInteract = m_PlayerController.FindAction("Attack/Interact", throwIfNotFound: true);
+        m_PlayerController_Pause = m_PlayerController.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -251,12 +283,14 @@ public partial class @InputController: IInputActionCollection2, IDisposable
     private List<IPlayerControllerActions> m_PlayerControllerActionsCallbackInterfaces = new List<IPlayerControllerActions>();
     private readonly InputAction m_PlayerController_Move;
     private readonly InputAction m_PlayerController_AttackInteract;
+    private readonly InputAction m_PlayerController_Pause;
     public struct PlayerControllerActions
     {
         private @InputController m_Wrapper;
         public PlayerControllerActions(@InputController wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_PlayerController_Move;
         public InputAction @AttackInteract => m_Wrapper.m_PlayerController_AttackInteract;
+        public InputAction @Pause => m_Wrapper.m_PlayerController_Pause;
         public InputActionMap Get() { return m_Wrapper.m_PlayerController; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -272,6 +306,9 @@ public partial class @InputController: IInputActionCollection2, IDisposable
             @AttackInteract.started += instance.OnAttackInteract;
             @AttackInteract.performed += instance.OnAttackInteract;
             @AttackInteract.canceled += instance.OnAttackInteract;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IPlayerControllerActions instance)
@@ -282,6 +319,9 @@ public partial class @InputController: IInputActionCollection2, IDisposable
             @AttackInteract.started -= instance.OnAttackInteract;
             @AttackInteract.performed -= instance.OnAttackInteract;
             @AttackInteract.canceled -= instance.OnAttackInteract;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IPlayerControllerActions instance)
@@ -303,5 +343,6 @@ public partial class @InputController: IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnAttackInteract(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }
