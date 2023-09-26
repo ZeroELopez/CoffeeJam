@@ -118,7 +118,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -175,7 +175,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!114 &-1902896490818553065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,6 +191,10 @@ MonoBehaviour:
   player: {fileID: 0}
   speed: 1
   range: 6
+  patrolRoute:
+  - {fileID: 0}
+  - {fileID: 0}
+  patrolTolerance: 0.001
 --- !u!1001 &8119025678563184242
 PrefabInstance:
   m_ObjectHideFlags: 0
