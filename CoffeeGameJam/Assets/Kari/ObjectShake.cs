@@ -34,4 +34,11 @@ public class ObjectShake : MonoBehaviour
     }
 
     public void Shake() => time = 0;
+
+    public void ShakeMultiplier(float newMultiplier)
+    {
+        time = 0;
+        multiplier = newMultiplier;
+    }
+
 }
