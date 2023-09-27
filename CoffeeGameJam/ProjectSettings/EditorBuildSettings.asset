@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Calvin/Scenes/YouLose.unity
     guid: 9532b74ee066c504199d937cbdaae113
   - enabled: 1
-    path: Assets/David/level1.unity
+    path: Assets/David/scenes/level1.unity
     guid: 56dacd19e7d8e6d40ac3d3a2088a8c26
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 13dde499997c8b640bfb6e2fef02b4ea, type: 2}
