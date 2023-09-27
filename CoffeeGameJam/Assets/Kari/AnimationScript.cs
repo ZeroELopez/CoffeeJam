@@ -7,10 +7,14 @@ namespace CoffeeJam.Visuals
     public enum CharacterStates
     {
         Idle,
-        Walking,
-        Attack,
-        Attack2,
-        Attack3,
+        WalkingUp,
+        WalkingDown,
+        AttackDown,
+        AttackDown2,
+        AttackDown3,
+        AttackUp,
+        AttackUp2,
+        AttackUp3,
         Block,
         Eat,
         Drink,
@@ -46,6 +50,8 @@ namespace CoffeeJam.Visuals
         Vector3 prevPos = new Vector3();
 
         [SerializeField] int attackNumber;
+        [SerializeField] int maxAttacks;
+        bool Up;
         [SerializeField] CharacterStates state = CharacterStates.Count;
 
         // Update is called once per frame
@@ -53,7 +59,7 @@ namespace CoffeeJam.Visuals
         {
             CharacterStates newState = FindState();
 
-            if (newState >= CharacterStates.Attack && newState <= CharacterStates.Attack3)
+            if (newState >= CharacterStates.AttackDown && newState <= CharacterStates.AttackUp3)
             {
                 float finalTime = (Time.time - AttackstartTime) / attackFrames/*player.attackFrames*/;
                 thisAnimator.Play((state = newState).ToString(), 0, finalTime);
@@ -69,7 +75,7 @@ namespace CoffeeJam.Visuals
         {
 
             if (state == CharacterStates.Hitstun || state == CharacterStates.Death || 
-                (state >= CharacterStates.Attack && state <= CharacterStates.Attack3))
+                (state >= CharacterStates.AttackDown && state <= CharacterStates.AttackUp3))
                 return state;
 
 
@@ -83,7 +89,17 @@ namespace CoffeeJam.Visuals
                 else if (transform.position.x < prevPos.x)
                     transform.localScale = originalScale;
 
-                newState = CharacterStates.Walking;
+                if (prevPos.y < transform.position.y)
+                {
+                    newState = CharacterStates.WalkingUp;
+                    Up = true;
+                }
+                else
+                {
+                    newState = CharacterStates.WalkingDown;
+                    Up = false;
+                }
+
                 prevPos = transform.position;
             }
 
@@ -95,7 +111,11 @@ namespace CoffeeJam.Visuals
 
         public void StartAttack(EntityState prevState)
         {
-            state = CharacterStates.Attack + (attackNumber < 3 ? attackNumber : attackNumber = 0);
+            if (Up)
+                state = CharacterStates.AttackUp + (attackNumber < maxAttacks ? attackNumber : attackNumber = 0);
+            else
+                state = CharacterStates.AttackDown + (attackNumber < maxAttacks ? attackNumber : attackNumber = 0);
+
             AttackstartTime = Time.time;
             attackFrames = EntityEventTracker.player.attackFrames;
             attackNumber++;
