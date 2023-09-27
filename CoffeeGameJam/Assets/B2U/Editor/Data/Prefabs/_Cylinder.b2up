@@ -1,0 +1,13 @@
+<Prefab>
+  <Materials>
+    <Mat>
+      <Name>Material.002</Name>
+      <Path>Assets/Cindy/Models/Scene/Materials</Path>
+    </Mat>
+  </Materials>
+  <Tag>Untagged</Tag>
+  <Layer>Default</Layer>
+  <Static>Static</Static>
+  <Collider>Box</Collider>
+  <UV2>True</UV2>
+</Prefab>
