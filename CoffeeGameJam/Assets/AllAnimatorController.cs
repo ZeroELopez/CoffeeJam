@@ -22,6 +22,8 @@ public class AllAnimatorController : MonoBehaviour
             effectOn = false;
             foreach (Animator a in allAnimators)
             {
+if (a == null)
+continue;
                 a.enabled = true;
                 a.speed = 1;
             }
@@ -37,6 +39,8 @@ public class AllAnimatorController : MonoBehaviour
 
         foreach (Animator a in allAnimators)
         {
+if (a == null)
+continue;
             a.enabled = false;
             a.speed = 0;
         }
