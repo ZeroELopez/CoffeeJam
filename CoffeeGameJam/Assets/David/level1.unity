@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2108522613}
   speed: 2
-  distance: 0
+  range: 4
 --- !u!1 &832375709
 GameObject:
   m_ObjectHideFlags: 0

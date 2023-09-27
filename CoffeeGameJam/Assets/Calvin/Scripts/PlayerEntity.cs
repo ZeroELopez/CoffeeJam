@@ -69,6 +69,9 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
     private float moveSpeedBoost;
     private float speedBoost;
 
+    private bool isPoweredUp;
+    public bool IsPoweredUp => isPoweredUp;
+
     public float attackFrames { get { return ((float)attackStartUpFrames + (float)attackActiveFrames + (float)attackRecoveryFrames) / 60f; } }
 
     public bool isAttacking;
@@ -200,7 +203,9 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
         EventHub.Instance.PostEvent(new PlayerPowerUpStart());
         Debug.Log("POWER UP!");
         speedBoost = moveSpeedBoost;
+        isPoweredUp = true;
         yield return new WaitForSeconds(powerUpTimer);
+        isPoweredUp = false;
         speedBoost = 0;
         currentPowerGauge = 0;
         EventHub.Instance.PostEvent(new PlayerPowerUpEnd());
