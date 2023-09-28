@@ -21,7 +21,7 @@ public class ExploderenemyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindFirstObjectByType<PlayerEntity>().gameObject;
+        player = GameObject.FindFirstObjectByType<ExplosionEnemyEtry>().gameObject;
     }
 
     // Update is called once per frame
@@ -38,17 +38,7 @@ public class ExploderenemyAI : MonoBehaviour
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
             //transform.rotation = Quaternion.Euler(Vector3.forward * angle);
 
-            for (int q = 0; q < range; q++)
-            {
-                q++;
-
-                if (q == range)
-                {
-                    EventHub.Instance.PostEvent(new EnemyDisposed());
-                    ItemSpawner.Instance.SpawnItem(gameObject.transform.position);
-                    Destroy(this);
-                }
-            }
+            
         }
         else
         {
@@ -59,6 +49,19 @@ public class ExploderenemyAI : MonoBehaviour
                 {
                     patrolIndex = (patrolIndex + 1) % patrolRoute.Length;
                 }
+
+                for (int q = 0; q < range; q++)
+                {
+                    q++;
+
+                    if (q == range)
+                    {
+                        EventHub.Instance.PostEvent(new EnemyDisposed());
+                        ItemSpawner.Instance.SpawnItem(gameObject.transform.position);
+
+                    }
+                }
+
             }
         }
     }
@@ -67,5 +70,7 @@ public class ExploderenemyAI : MonoBehaviour
     {
         patrolRoute = route;
     }
+
+
 
 }
