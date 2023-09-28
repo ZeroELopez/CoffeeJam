@@ -40,6 +40,9 @@ public class EntityEventTracker : MonoBehaviour, ISubscribable<PlayerPowerUpStar
     // Update is called once per frame
     void Update()
     {
+        if (script == null)
+            return;
+
         List<string> logs = new List<string>();
 
         if (prevState.ChangedState(script, out logs))

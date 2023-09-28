@@ -16,6 +16,9 @@ public class Healthbar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (entity == null)
+            return;
+
         image.fillAmount = (float)entity.CurrentHealth / (float)entity.BaseHealth;
     }
 }
