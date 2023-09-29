@@ -1,0 +1,43 @@
+<Scene>
+  <Parameters>
+    <Name>Scene</Name>
+  </Parameters>
+  <Objects>
+    <Object>
+      <Name>Table Top</Name>
+      <Prefab>Assets/Cindy/Models/Scene/Prefabs/_Cube.001.fbx</Prefab>
+      <Position>(0.0, 0.0, 0.0)</Position>
+      <Rotation>(0.0, -0.0, 0.0)</Rotation>
+      <Scale>(1.0, 1.0, 1.0)</Scale>
+      <Static>Keep</Static>
+      <Layer />
+      <Tag />
+      <Parent>None</Parent>
+    </Object>
+    <Object>
+      <Name>Cylinder</Name>
+      <Prefab>Assets/Cindy/Models/Scene/Prefabs/_Cylinder.fbx</Prefab>
+      <Position>(0.0, -1.33188, 0.0)</Position>
+      <Rotation>(0.0, -0.0, 0.0)</Rotation>
+      <Scale>(1.0, 1.0, 1.0)</Scale>
+      <Static>Keep</Static>
+      <Layer />
+      <Tag />
+      <Parent>None</Parent>
+    </Object>
+  </Objects>
+  <Lamps />
+  <Cameras>
+    <Camera>
+      <Name>Camera</Name>
+      <Position>(7.35889, 4.95831, -6.92579)</Position>
+      <Rotation>(63.55935668011833, -0.0, 46.69204743042093)</Rotation>
+      <Projection>PERSP</Projection>
+      <Fov>39.60</Fov>
+      <Near>0.10</Near>
+      <Far>100.00</Far>
+      <Size>7.31</Size>
+      <Parent>None</Parent>
+    </Camera>
+  </Cameras>
+</Scene>
