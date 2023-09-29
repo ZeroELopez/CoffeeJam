@@ -17,4 +17,9 @@ namespace Assets.Scripts.Base.Events
     {
         
     }
+
+    public class EnemyIsHit : DispatchableEvent {
+        public EnemyEntity hitEnemy;
+    }
+    public class PlayerIsHit : DispatchableEvent { }
 }

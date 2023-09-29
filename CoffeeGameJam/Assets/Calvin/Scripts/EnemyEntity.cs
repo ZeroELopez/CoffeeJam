@@ -20,6 +20,7 @@ public class EnemyEntity : Entity, ISubscribable<PlayerPowerUpStart>, ISubscriba
             {
                 CurrentHealth -= attack.Damage;
                 Debug.Log("Damage Enemy");
+                EventHub.Instance.PostEvent(new EnemyIsHit { hitEnemy = this });
             }
         }
     }
@@ -29,6 +30,7 @@ public class EnemyEntity : Entity, ISubscribable<PlayerPowerUpStart>, ISubscriba
         var player = other.collider.GetComponent<PlayerEntity>();
         if (player != null && !player.IsInvincible)
         {
+            EventHub.Instance.PostEvent(new PlayerIsHit());
             player.CurrentHealth -= collisionDamage;
             player.StartCoroutine(player.Invincibility());
         }
