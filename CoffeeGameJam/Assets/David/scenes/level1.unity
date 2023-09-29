@@ -128,34 +128,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4009871427997755237, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
   m_PrefabInstance: {fileID: 3957138557550542202}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &480885022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 480885016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a12f02cd064f5c498c278ad86b9f92b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 0}
-  Player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 0
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkRange: 0
-  walkPointRange: 0
-  timeforAttack: 0
-  sightRange: 0
-  attackRange: 0
-  playerInSigntRange: 0
-  playerInAttackRange: 0
 --- !u!114 &480885028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +143,8 @@ MonoBehaviour:
   player: {fileID: 2108522613}
   speed: 2
   range: 4
+  patrolRoute: []
+  patrolTolerance: 0.001
 --- !u!1 &832375709
 GameObject:
   m_ObjectHideFlags: 0
@@ -9769,6 +9743,33 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5744454786367094565, guid: 399fa4a0a3bfd2e4cbc362ea58b714a0, type: 3}
   m_PrefabInstance: {fileID: 4295572802587621941}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2108522619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108522613}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4141da8664493d84e8dc77db55ae6db6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movSpeed: 5
+--- !u!114 &2108522620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108522613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a403fe4bf9cc024880cba80fe471e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temporaryIndicator: {fileID: 0}
+  PlayerToTrack: {fileID: 0}
 --- !u!1001 &3957138557550542202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9777,6 +9778,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1186465340366458112, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4009871427997755237, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -9821,13 +9826,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -1902896490818553065, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4009871427997755237, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 480885022}
     - targetCorrespondingSourceObject: {fileID: 4009871427997755237, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 480885028}
@@ -9880,6 +9883,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3173099119767428476, guid: 399fa4a0a3bfd2e4cbc362ea58b714a0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5744454786367094565, guid: 399fa4a0a3bfd2e4cbc362ea58b714a0, type: 3}
       propertyPath: m_Name
       value: CharacterTemp
@@ -9887,7 +9894,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5744454786367094565, guid: 399fa4a0a3bfd2e4cbc362ea58b714a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2108522619}
+    - targetCorrespondingSourceObject: {fileID: 5744454786367094565, guid: 399fa4a0a3bfd2e4cbc362ea58b714a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2108522620}
   m_SourcePrefab: {fileID: 100100000, guid: 399fa4a0a3bfd2e4cbc362ea58b714a0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
