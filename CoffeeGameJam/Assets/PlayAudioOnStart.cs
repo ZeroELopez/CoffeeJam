@@ -19,13 +19,13 @@ public class PlayAudioOnStart : MonoBehaviour
         for (int i = 0; i < LevelNames.Length; i++)
             dictionary.Add(LevelNames[i], new string[2] { LevelStart[i], LevelEnd[i] });
 
-        if (dictionary.TryGetValue(SceneManager.GetActiveScene().name, out lines));
+        if (dictionary.TryGetValue(SceneManager.GetActiveScene().name, out lines))
             AudioManager.PlaySound(lines[0], GetComponent<AudioSource>());
     }
 
     public void EndLevelLine()
     {
-        if (dictionary.TryGetValue(SceneManager.GetActiveScene().name, out lines)) ;
+        if (dictionary.TryGetValue(SceneManager.GetActiveScene().name, out lines))
         AudioManager.PlaySound(lines[1], GetComponent<AudioSource>());
     }
 
