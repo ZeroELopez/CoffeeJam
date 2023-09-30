@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(enemyAI2))]
 public class EnemyEntity : Entity, ISubscribable<PlayerPowerUpStart>, ISubscribable<PlayerPowerUpEnd>
 {
+    enemyAI2 AIScript;
 
     [SerializeField]
-    private int collisionDamage;
+    public int collisionDamage;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -46,6 +46,7 @@ public class EnemyEntity : Entity, ISubscribable<PlayerPowerUpStart>, ISubscriba
 
     protected override void Initialize()
     {
+        AIScript = GetComponent<enemyAI2>();
         EventHub.Instance.PostEvent(new EnemySpawned());
         Subscribe();
     }
@@ -64,11 +65,17 @@ public class EnemyEntity : Entity, ISubscribable<PlayerPowerUpStart>, ISubscriba
 
     public void HandleEvent(PlayerPowerUpStart evt)
     {
-        GetComponent<enemyAI2>().speed /= 2;
+        if (AIScript != null)
+        {
+            AIScript.speed /= 2;
+        }
     }
 
     public void HandleEvent(PlayerPowerUpEnd evt)
     {
-        GetComponent<enemyAI2>().speed *= 2;
+        if (AIScript != null)
+        {
+            AIScript.speed *= 2;
+        }
     }
 }

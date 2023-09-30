@@ -19,4 +19,25 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public static void PlaySound(string name, AudioSource source)
+    {
+        foreach(Sound sound in instance.sounds)
+        {
+            if (sound.name == name)
+            {
+                source.clip = sound.clip;
+
+                if (sound.clipVariants.Length > 0)
+                    source.clip = sound.clipVariants[Random.Range(0, sound.clipVariants.Length - 1)];
+
+
+                source.volume = Random.Range(sound.volumeMin, sound.volumeMax);
+                source.pitch = Random.Range(sound.pitchMin, sound.pitchMax);
+                source.timeSamples = sound.startingPoints[Random.Range(0, sound.startingPoints.Length - 1)];
+                
+                source.Play();
+            }
+        }
+    }
 }

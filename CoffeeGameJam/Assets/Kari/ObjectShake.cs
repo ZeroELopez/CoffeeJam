@@ -6,20 +6,28 @@ using UnityEngine.Animations;
 public class ObjectShake : MonoBehaviour
 {
     public AnimationCurve animationCurve;
+
+    public static ObjectShake Camera;
+
     public float multiplier;
     public float length;
 
     Vector3 origins;
+    
+    
 
     // Start is called before the first frame update
     void Start()
     {
         origins = transform.localPosition;
 
+        if (GetComponent<Camera>() != null)
+            Camera = this;
         //time = 0;
     }
 
     float time = float.MaxValue;
+    public float setTime { get => time; set => time = value; }
     // Update is called once per frame
     void Update()
     {
@@ -40,5 +48,9 @@ public class ObjectShake : MonoBehaviour
         time = 0;
         multiplier = newMultiplier;
     }
+
+    public void CameraShake() => Camera.Shake();
+
+    public void CameraShakeMultiplier(float newMultiplier) => Camera.ShakeMultiplier(newMultiplier);
 
 }

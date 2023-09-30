@@ -1,0 +1,834 @@
+{
+    "version": {
+        "major": 5,
+        "minor": 1
+    },
+    "project": {
+        "format": {
+            "extension": "png"
+        },
+        "camera": {
+            "width": 1920,
+            "height": 1080,
+            "field": 0,
+            "framerate": 24.0,
+            "pixelaspectratio": 1.0,
+            "antialiasing": 1
+        },
+        "clip": {
+            "name": "Clip_003",
+            "width": 1080,
+            "height": 1920,
+            "dpi": 72,
+            "framerate": 24.0,
+            "pixelaspectratio": 1.0,
+            "image-count": 18,
+            "bg": {
+                "red": 255,
+                "green": 255,
+                "blue": 255
+            },
+            "markin": {
+                "status": false,
+                "value": 0
+            },
+            "markout": {
+                "status": false,
+                "value": 0
+            },
+            "camera": {
+                "mode": 2,
+                "profile": "2 0 1 0 0 1 1 ",
+                "motion-blur": 0.0,
+                "lock-all": false,
+                "lock-x": false,
+                "lock-y": false,
+                "lock-angle": false,
+                "lock-scale": false,
+                "points": [],
+                "positions": [
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    }
+                ]
+            },
+            "layers": [
+                {
+                    "name": "Base",
+                    "visible": true,
+                    "position": 0,
+                    "opacity": 255,
+                    "start": 0,
+                    "end": 17,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 0,
+                            "instance-name": "1",
+                            "file": "[000] Base/[0000] Base.png",
+                            "images": [
+                                0
+                            ]
+                        },
+                        {
+                            "instance-index": 1,
+                            "instance-name": "2",
+                            "file": "[000] Base/[0001] Base.png",
+                            "images": [
+                                1
+                            ]
+                        },
+                        {
+                            "instance-index": 2,
+                            "instance-name": "3",
+                            "file": "[000] Base/[0002] Base.png",
+                            "images": [
+                                2
+                            ]
+                        },
+                        {
+                            "instance-index": 3,
+                            "instance-name": "4",
+                            "file": "[000] Base/[0003] Base.png",
+                            "images": [
+                                3
+                            ]
+                        },
+                        {
+                            "instance-index": 4,
+                            "instance-name": "5",
+                            "file": "[000] Base/[0004] Base.png",
+                            "images": [
+                                4
+                            ]
+                        },
+                        {
+                            "instance-index": 5,
+                            "instance-name": "6",
+                            "file": "[000] Base/[0005] Base.png",
+                            "images": [
+                                5
+                            ]
+                        },
+                        {
+                            "instance-index": 6,
+                            "instance-name": "7",
+                            "file": "[000] Base/[0006] Base.png",
+                            "images": [
+                                6
+                            ]
+                        },
+                        {
+                            "instance-index": 7,
+                            "instance-name": "8",
+                            "file": "[000] Base/[0007] Base.png",
+                            "images": [
+                                7
+                            ]
+                        },
+                        {
+                            "instance-index": 9,
+                            "instance-name": "9",
+                            "file": "[000] Base/[0009] Base.png",
+                            "images": [
+                                9
+                            ]
+                        },
+                        {
+                            "instance-index": 10,
+                            "instance-name": "10",
+                            "file": "[000] Base/[0010] Base.png",
+                            "images": [
+                                10
+                            ]
+                        },
+                        {
+                            "instance-index": 12,
+                            "instance-name": "11",
+                            "file": "[000] Base/[0012] Base.png",
+                            "images": [
+                                12
+                            ]
+                        },
+                        {
+                            "instance-index": 13,
+                            "instance-name": "12",
+                            "file": "[000] Base/[0013] Base.png",
+                            "images": [
+                                13
+                            ]
+                        },
+                        {
+                            "instance-index": 15,
+                            "instance-name": "13",
+                            "file": "[000] Base/[0015] Base.png",
+                            "images": [
+                                15
+                            ]
+                        },
+                        {
+                            "instance-index": 16,
+                            "instance-name": "14",
+                            "file": "[000] Base/[0016] Base.png",
+                            "images": [
+                                16
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CTG_Base",
+                    "visible": true,
+                    "position": 1,
+                    "opacity": 255,
+                    "start": 0,
+                    "end": 17,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 255,
+                        "green": 115,
+                        "blue": 40
+                    },
+                    "link": [
+                        {
+                            "instance-index": 0,
+                            "instance-name": "1",
+                            "file": "[001] CTG_Base/[0000] CTG_Base.png",
+                            "images": [
+                                0
+                            ]
+                        },
+                        {
+                            "instance-index": 1,
+                            "instance-name": "2",
+                            "file": "[001] CTG_Base/[0001] CTG_Base.png",
+                            "images": [
+                                1
+                            ]
+                        },
+                        {
+                            "instance-index": 2,
+                            "instance-name": "3",
+                            "file": "[001] CTG_Base/[0002] CTG_Base.png",
+                            "images": [
+                                2
+                            ]
+                        },
+                        {
+                            "instance-index": 3,
+                            "instance-name": "4",
+                            "file": "[001] CTG_Base/[0003] CTG_Base.png",
+                            "images": [
+                                3
+                            ]
+                        },
+                        {
+                            "instance-index": 4,
+                            "instance-name": "5",
+                            "file": "[001] CTG_Base/[0004] CTG_Base.png",
+                            "images": [
+                                4
+                            ]
+                        },
+                        {
+                            "instance-index": 5,
+                            "instance-name": "6",
+                            "file": "[001] CTG_Base/[0005] CTG_Base.png",
+                            "images": [
+                                5
+                            ]
+                        },
+                        {
+                            "instance-index": 6,
+                            "instance-name": "7",
+                            "file": "[001] CTG_Base/[0006] CTG_Base.png",
+                            "images": [
+                                6
+                            ]
+                        },
+                        {
+                            "instance-index": 7,
+                            "instance-name": "8",
+                            "file": "[001] CTG_Base/[0007] CTG_Base.png",
+                            "images": [
+                                7
+                            ]
+                        },
+                        {
+                            "instance-index": 9,
+                            "instance-name": "9",
+                            "file": "[001] CTG_Base/[0009] CTG_Base.png",
+                            "images": [
+                                9
+                            ]
+                        },
+                        {
+                            "instance-index": 10,
+                            "instance-name": "10",
+                            "file": "[001] CTG_Base/[0010] CTG_Base.png",
+                            "images": [
+                                10
+                            ]
+                        },
+                        {
+                            "instance-index": 12,
+                            "instance-name": "11",
+                            "file": "[001] CTG_Base/[0012] CTG_Base.png",
+                            "images": [
+                                12
+                            ]
+                        },
+                        {
+                            "instance-index": 13,
+                            "instance-name": "12",
+                            "file": "[001] CTG_Base/[0013] CTG_Base.png",
+                            "images": [
+                                13
+                            ]
+                        },
+                        {
+                            "instance-index": 15,
+                            "instance-name": "13",
+                            "file": "[001] CTG_Base/[0015] CTG_Base.png",
+                            "images": [
+                                15
+                            ]
+                        },
+                        {
+                            "instance-index": 16,
+                            "instance-name": "14",
+                            "file": "[001] CTG_Base/[0016] CTG_Base.png",
+                            "images": [
+                                16
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "NZ Head",
+                    "visible": true,
+                    "position": 5,
+                    "opacity": 255,
+                    "start": 6,
+                    "end": 11,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 6,
+                            "instance-name": "1",
+                            "file": "[005] NZ Head/[0006] NZ Head.png",
+                            "images": [
+                                6
+                            ]
+                        },
+                        {
+                            "instance-index": 7,
+                            "instance-name": "2",
+                            "file": "[005] NZ Head/[0007] NZ Head.png",
+                            "images": [
+                                7
+                            ]
+                        },
+                        {
+                            "instance-index": 9,
+                            "instance-name": "3",
+                            "file": "[005] NZ Head/[0009] NZ Head.png",
+                            "images": [
+                                9
+                            ]
+                        },
+                        {
+                            "instance-index": 10,
+                            "instance-name": "4",
+                            "file": "[005] NZ Head/[0010] NZ Head.png",
+                            "images": [
+                                10
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CTG_NZ Head",
+                    "visible": true,
+                    "position": 6,
+                    "opacity": 255,
+                    "start": 6,
+                    "end": 11,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 255,
+                        "green": 115,
+                        "blue": 40
+                    },
+                    "link": [
+                        {
+                            "instance-index": 6,
+                            "instance-name": "1",
+                            "file": "[006] CTG_NZ Head/[0006] CTG_NZ Head.png",
+                            "images": [
+                                6
+                            ]
+                        },
+                        {
+                            "instance-index": 7,
+                            "instance-name": "2",
+                            "file": "[006] CTG_NZ Head/[0007] CTG_NZ Head.png",
+                            "images": [
+                                7
+                            ]
+                        },
+                        {
+                            "instance-index": 9,
+                            "instance-name": "3",
+                            "file": "[006] CTG_NZ Head/[0009] CTG_NZ Head.png",
+                            "images": [
+                                9
+                            ]
+                        },
+                        {
+                            "instance-index": 10,
+                            "instance-name": "4",
+                            "file": "[006] CTG_NZ Head/[0010] CTG_NZ Head.png",
+                            "images": [
+                                10
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "NZ Blade",
+                    "visible": true,
+                    "position": 8,
+                    "opacity": 255,
+                    "start": 6,
+                    "end": 11,
+                    "pre-behavior": 0,
+                    "post-behavior": 1,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 6,
+                            "instance-name": "1",
+                            "file": "[008] NZ Blade/[0006] NZ Blade.png",
+                            "images": [
+                                6
+                            ]
+                        },
+                        {
+                            "instance-index": 7,
+                            "instance-name": "2",
+                            "file": "[008] NZ Blade/[0007] NZ Blade.png",
+                            "images": [
+                                7
+                            ]
+                        },
+                        {
+                            "instance-index": 8,
+                            "instance-name": "3",
+                            "file": "[008] NZ Blade/[0008] NZ Blade.png",
+                            "images": [
+                                8
+                            ]
+                        },
+                        {
+                            "instance-index": 9,
+                            "instance-name": "4",
+                            "file": "[008] NZ Blade/[0009] NZ Blade.png",
+                            "images": [
+                                9
+                            ]
+                        },
+                        {
+                            "instance-index": 10,
+                            "instance-name": "5",
+                            "file": "[008] NZ Blade/[0010] NZ Blade.png",
+                            "images": [
+                                10
+                            ]
+                        },
+                        {
+                            "instance-index": 11,
+                            "instance-name": "6",
+                            "file": "[008] NZ Blade/[0011] NZ Blade.png",
+                            "images": [
+                                11
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CTG NZ Blade",
+                    "visible": true,
+                    "position": 9,
+                    "opacity": 255,
+                    "start": 6,
+                    "end": 11,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 255,
+                        "green": 115,
+                        "blue": 40
+                    },
+                    "link": [
+                        {
+                            "instance-index": 6,
+                            "instance-name": "1",
+                            "file": "[009] CTG NZ Blade/[0006] CTG NZ Blade.png",
+                            "images": [
+                                6
+                            ]
+                        },
+                        {
+                            "instance-index": 7,
+                            "instance-name": "2",
+                            "file": "[009] CTG NZ Blade/[0007] CTG NZ Blade.png",
+                            "images": [
+                                7
+                            ]
+                        },
+                        {
+                            "instance-index": 8,
+                            "instance-name": "3",
+                            "file": "[009] CTG NZ Blade/[0008] CTG NZ Blade.png",
+                            "images": [
+                                8
+                            ]
+                        },
+                        {
+                            "instance-index": 9,
+                            "instance-name": "4",
+                            "file": "[009] CTG NZ Blade/[0009] CTG NZ Blade.png",
+                            "images": [
+                                9
+                            ]
+                        },
+                        {
+                            "instance-index": 10,
+                            "instance-name": "5",
+                            "file": "[009] CTG NZ Blade/[0010] CTG NZ Blade.png",
+                            "images": [
+                                10
+                            ]
+                        },
+                        {
+                            "instance-index": 11,
+                            "instance-name": "6",
+                            "file": "[009] CTG NZ Blade/[0011] CTG NZ Blade.png",
+                            "images": [
+                                11
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "EZ Bomb",
+                    "visible": true,
+                    "position": 10,
+                    "opacity": 255,
+                    "start": 6,
+                    "end": 11,
+                    "pre-behavior": 0,
+                    "post-behavior": 1,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 6,
+                            "instance-name": "1",
+                            "file": "[010] EZ Bomb/[0006] EZ Bomb.png",
+                            "images": [
+                                6
+                            ]
+                        },
+                        {
+                            "instance-index": 10,
+                            "instance-name": "2",
+                            "file": "[010] EZ Bomb/[0010] EZ Bomb.png",
+                            "images": [
+                                10
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CTG_EZ Bomb",
+                    "visible": true,
+                    "position": 11,
+                    "opacity": 255,
+                    "start": 6,
+                    "end": 11,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 255,
+                        "green": 115,
+                        "blue": 40
+                    },
+                    "link": [
+                        {
+                            "instance-index": 6,
+                            "instance-name": "1",
+                            "file": "[011] CTG_EZ Bomb/[0006] CTG_EZ Bomb.png",
+                            "images": [
+                                6
+                            ]
+                        },
+                        {
+                            "instance-index": 10,
+                            "instance-name": "2",
+                            "file": "[011] CTG_EZ Bomb/[0010] CTG_EZ Bomb.png",
+                            "images": [
+                                10
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "EZ Head",
+                    "visible": true,
+                    "position": 13,
+                    "opacity": 255,
+                    "start": 6,
+                    "end": 11,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 6,
+                            "instance-name": "1",
+                            "file": "[013] EZ Head/[0006] EZ Head.png",
+                            "images": [
+                                6
+                            ]
+                        },
+                        {
+                            "instance-index": 7,
+                            "instance-name": "2",
+                            "file": "[013] EZ Head/[0007] EZ Head.png",
+                            "images": [
+                                7
+                            ]
+                        },
+                        {
+                            "instance-index": 9,
+                            "instance-name": "3",
+                            "file": "[013] EZ Head/[0009] EZ Head.png",
+                            "images": [
+                                9
+                            ]
+                        },
+                        {
+                            "instance-index": 10,
+                            "instance-name": "4",
+                            "file": "[013] EZ Head/[0010] EZ Head.png",
+                            "images": [
+                                10
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CTG_EZ Head",
+                    "visible": true,
+                    "position": 14,
+                    "opacity": 255,
+                    "start": 6,
+                    "end": 11,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 255,
+                        "green": 115,
+                        "blue": 40
+                    },
+                    "link": [
+                        {
+                            "instance-index": 6,
+                            "instance-name": "1",
+                            "file": "[014] CTG_EZ Head/[0006] CTG_EZ Head.png",
+                            "images": [
+                                6
+                            ]
+                        },
+                        {
+                            "instance-index": 7,
+                            "instance-name": "2",
+                            "file": "[014] CTG_EZ Head/[0007] CTG_EZ Head.png",
+                            "images": [
+                                7
+                            ]
+                        },
+                        {
+                            "instance-index": 9,
+                            "instance-name": "3",
+                            "file": "[014] CTG_EZ Head/[0009] CTG_EZ Head.png",
+                            "images": [
+                                9
+                            ]
+                        },
+                        {
+                            "instance-index": 10,
+                            "instance-name": "4",
+                            "file": "[014] CTG_EZ Head/[0010] CTG_EZ Head.png",
+                            "images": [
+                                10
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                }
+            ]
+        }
+    }
+}

@@ -11,6 +11,7 @@ public abstract class Entity : MonoBehaviour
 
     public Action OnHealthChanged;
 
+    [SerializeField]
     private int currentHealth;
     public int CurrentHealth
     {
@@ -47,13 +48,6 @@ public abstract class Entity : MonoBehaviour
     }
 
     protected abstract void Initialize();
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (!isInvincible)
-        {
-        }
-    }
 
     public abstract void OnDeath();
 

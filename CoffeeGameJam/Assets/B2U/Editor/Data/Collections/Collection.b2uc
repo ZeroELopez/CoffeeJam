@@ -1,18 +1,18 @@
 <Collection>
-  <Path>Assets/Cindy/Models/Scene/Prefabs/Collection.prefab</Path>
-  <NoCache>8961</NoCache>
+  <Path>Assets/Cindy/Visuals/3D/Scene/Prefabs/Collection.prefab</Path>
+  <NoCache>3054</NoCache>
   <Object>
-    <Name>Table Top</Name>
-    <Prefab>Assets/Cindy/Models/Scene/Prefabs/_Cube.001.fbx</Prefab>
+    <Name>Cubicle Wall</Name>
+    <Prefab>Assets/Cindy/Visuals/3D/Scene/Prefabs/_Cube.001.fbx</Prefab>
     <Position>(0.0, 0.0, 0.0)</Position>
     <Rotation>(0.0, -0.0, 0.0)</Rotation>
     <Scale>(1.0, 1.0, 1.0)</Scale>
     <Parent>None</Parent>
   </Object>
   <Object>
-    <Name>Cylinder</Name>
-    <Prefab>Assets/Cindy/Models/Scene/Prefabs/_Cylinder.fbx</Prefab>
-    <Position>(0.0, -1.33188, 0.0)</Position>
+    <Name>Cubicle Front</Name>
+    <Prefab>Assets/Cindy/Visuals/3D/Scene/Prefabs/_Cubicle.fbx</Prefab>
+    <Position>(-1.44776, 0.24661, 0.0)</Position>
     <Rotation>(0.0, -0.0, 0.0)</Rotation>
     <Scale>(1.0, 1.0, 1.0)</Scale>
     <Parent>None</Parent>

@@ -1,0 +1,494 @@
+{
+    "version": {
+        "major": 5,
+        "minor": 1
+    },
+    "project": {
+        "format": {
+            "extension": "png"
+        },
+        "camera": {
+            "width": 1920,
+            "height": 1080,
+            "field": 0,
+            "framerate": 24.0,
+            "pixelaspectratio": 1.0,
+            "antialiasing": 1
+        },
+        "clip": {
+            "name": "Clip_004",
+            "width": 1080,
+            "height": 1920,
+            "dpi": 72,
+            "framerate": 24.0,
+            "pixelaspectratio": 1.0,
+            "image-count": 22,
+            "bg": {
+                "red": 255,
+                "green": 255,
+                "blue": 255
+            },
+            "markin": {
+                "status": false,
+                "value": 0
+            },
+            "markout": {
+                "status": false,
+                "value": 0
+            },
+            "camera": {
+                "mode": 2,
+                "profile": "2 0 1 0 0 1 1 ",
+                "motion-blur": 0.0,
+                "lock-all": false,
+                "lock-x": false,
+                "lock-y": false,
+                "lock-angle": false,
+                "lock-scale": false,
+                "points": [],
+                "positions": [
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    }
+                ]
+            },
+            "layers": [
+                {
+                    "name": "JZBody",
+                    "visible": true,
+                    "position": 0,
+                    "opacity": 255,
+                    "start": 12,
+                    "end": 16,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 12,
+                            "instance-name": "1",
+                            "file": "[000] JZBody/[0012] JZBody.png",
+                            "images": [
+                                12
+                            ]
+                        },
+                        {
+                            "instance-index": 14,
+                            "instance-name": "2",
+                            "file": "[000] JZBody/[0014] JZBody.png",
+                            "images": [
+                                14
+                            ]
+                        },
+                        {
+                            "instance-index": 16,
+                            "instance-name": "3",
+                            "file": "[000] JZBody/[0016] JZBody.png",
+                            "images": [
+                                16
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CTG_JZBody",
+                    "visible": true,
+                    "position": 1,
+                    "opacity": 255,
+                    "start": 12,
+                    "end": 16,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 255,
+                        "green": 115,
+                        "blue": 40
+                    },
+                    "link": [
+                        {
+                            "instance-index": 12,
+                            "instance-name": "1",
+                            "file": "[001] CTG_JZBody/[0012] CTG_JZBody.png",
+                            "images": [
+                                12
+                            ]
+                        },
+                        {
+                            "instance-index": 14,
+                            "instance-name": "2",
+                            "file": "[001] CTG_JZBody/[0014] CTG_JZBody.png",
+                            "images": [
+                                14
+                            ]
+                        },
+                        {
+                            "instance-index": 16,
+                            "instance-name": "3",
+                            "file": "[001] CTG_JZBody/[0016] CTG_JZBody.png",
+                            "images": [
+                                16
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "JZSpine",
+                    "visible": true,
+                    "position": 3,
+                    "opacity": 255,
+                    "start": 12,
+                    "end": 16,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 12,
+                            "instance-name": "1",
+                            "file": "[003] JZSpine/[0012] JZSpine.png",
+                            "images": [
+                                12
+                            ]
+                        },
+                        {
+                            "instance-index": 14,
+                            "instance-name": "2",
+                            "file": "[003] JZSpine/[0014] JZSpine.png",
+                            "images": [
+                                14
+                            ]
+                        },
+                        {
+                            "instance-index": 16,
+                            "instance-name": "3",
+                            "file": "[003] JZSpine/[0016] JZSpine.png",
+                            "images": [
+                                16
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CTG_JZSpine",
+                    "visible": true,
+                    "position": 4,
+                    "opacity": 255,
+                    "start": 12,
+                    "end": 16,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 255,
+                        "green": 115,
+                        "blue": 40
+                    },
+                    "link": [
+                        {
+                            "instance-index": 12,
+                            "instance-name": "1",
+                            "file": "[004] CTG_JZSpine/[0012] CTG_JZSpine.png",
+                            "images": [
+                                12
+                            ]
+                        },
+                        {
+                            "instance-index": 14,
+                            "instance-name": "2",
+                            "file": "[004] CTG_JZSpine/[0014] CTG_JZSpine.png",
+                            "images": [
+                                14
+                            ]
+                        },
+                        {
+                            "instance-index": 16,
+                            "instance-name": "3",
+                            "file": "[004] CTG_JZSpine/[0016] CTG_JZSpine.png",
+                            "images": [
+                                16
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "JZLegs",
+                    "visible": true,
+                    "position": 6,
+                    "opacity": 255,
+                    "start": 12,
+                    "end": 21,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 12,
+                            "instance-name": "1",
+                            "file": "[006] JZLegs/[0012] JZLegs.png",
+                            "images": [
+                                12
+                            ]
+                        },
+                        {
+                            "instance-index": 14,
+                            "instance-name": "2",
+                            "file": "[006] JZLegs/[0014] JZLegs.png",
+                            "images": [
+                                14
+                            ]
+                        },
+                        {
+                            "instance-index": 16,
+                            "instance-name": "3",
+                            "file": "[006] JZLegs/[0016] JZLegs.png",
+                            "images": [
+                                16
+                            ]
+                        },
+                        {
+                            "instance-index": 17,
+                            "instance-name": "4",
+                            "file": "[006] JZLegs/[0017] JZLegs.png",
+                            "images": [
+                                17
+                            ]
+                        },
+                        {
+                            "instance-index": 19,
+                            "instance-name": "5",
+                            "file": "[006] JZLegs/[0019] JZLegs.png",
+                            "images": [
+                                19
+                            ]
+                        },
+                        {
+                            "instance-index": 21,
+                            "instance-name": "6",
+                            "file": "[006] JZLegs/[0021] JZLegs.png",
+                            "images": [
+                                21
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CTG_JZLegs",
+                    "visible": true,
+                    "position": 7,
+                    "opacity": 255,
+                    "start": 12,
+                    "end": 21,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 255,
+                        "green": 115,
+                        "blue": 40
+                    },
+                    "link": [
+                        {
+                            "instance-index": 12,
+                            "instance-name": "1",
+                            "file": "[007] CTG_JZLegs/[0012] CTG_JZLegs.png",
+                            "images": [
+                                12
+                            ]
+                        },
+                        {
+                            "instance-index": 14,
+                            "instance-name": "2",
+                            "file": "[007] CTG_JZLegs/[0014] CTG_JZLegs.png",
+                            "images": [
+                                14
+                            ]
+                        },
+                        {
+                            "instance-index": 16,
+                            "instance-name": "3",
+                            "file": "[007] CTG_JZLegs/[0016] CTG_JZLegs.png",
+                            "images": [
+                                16
+                            ]
+                        },
+                        {
+                            "instance-index": 17,
+                            "instance-name": "4",
+                            "file": "[007] CTG_JZLegs/[0017] CTG_JZLegs.png",
+                            "images": [
+                                17
+                            ]
+                        },
+                        {
+                            "instance-index": 19,
+                            "instance-name": "5",
+                            "file": "[007] CTG_JZLegs/[0019] CTG_JZLegs.png",
+                            "images": [
+                                19
+                            ]
+                        },
+                        {
+                            "instance-index": 21,
+                            "instance-name": "6",
+                            "file": "[007] CTG_JZLegs/[0021] CTG_JZLegs.png",
+                            "images": [
+                                21
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                }
+            ]
+        }
+    }
+}

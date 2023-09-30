@@ -29,7 +29,8 @@ public class LevelExit : MonoBehaviour, ISubscribable<EnemySpawned>, ISubscribab
         {
             if (unlockThreshold <= 0)
             {
-                SceneManager.LoadScene(NextScene);
+                EventHub.Instance.PostEvent(new HideHealthbar());
+                SceneLoaderModule.LoadLevel(NextScene);
             }
             else
             {
