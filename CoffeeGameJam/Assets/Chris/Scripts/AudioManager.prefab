@@ -86,7 +86,7 @@ MonoBehaviour:
     pitchMin: 1
     pitchMax: 1
     startingPoints: 00000000
-  - name: BossDeath
+  - name: Mr Johnson
     clip: {fileID: 8300000, guid: fea6c3cb777bcaf4f839e7f8ee5ccbe2, type: 3}
     clipVariants: []
     volumeMin: 1

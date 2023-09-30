@@ -83,7 +83,7 @@ namespace CoffeeJam.Visuals
             CharacterStates newState = CharacterStates.Idle;
 
 
-            if (Vector3.Distance(prevPos,transform.position) > .1f)
+            if (Vector3.Distance(prevPos,transform.position) > .01f)
             {
                 if (transform.position.x > prevPos.x)
                     transform.localScale = new Vector3(originalScale.x * -1, originalScale.y, originalScale.z);

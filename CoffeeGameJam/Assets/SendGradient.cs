@@ -21,8 +21,8 @@ public class SendGradient : MonoBehaviour
         if (multiGradients.Length > 0)
             gradient = multiGradients[Random.Range(0, multiGradients.Length - 1)];
 
-       // _material = material;// Instantiate(material);
-        //GetComponent<SpriteRenderer>().material = _material;
+        _material = Instantiate(material);
+        GetComponent<SpriteRenderer>().material = _material;
     }
 
     // Update is called once per frame

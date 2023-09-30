@@ -22,6 +22,7 @@ public class CopySprite : MonoBehaviour
             return;
 
         spriteRenderer.sprite = parentRenderer.sprite;
+        spriteRenderer.material = parentRenderer.material;
 
         if (CopyFlip && spriteRenderer != null)
             spriteRenderer.flipX = parentRenderer.flipX;

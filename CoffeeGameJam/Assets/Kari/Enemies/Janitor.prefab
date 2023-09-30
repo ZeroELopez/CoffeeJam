@@ -26,13 +26,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3816368691588064695}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.0014835156, y: 0, z: 0, w: 0.9999989}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8628113363895491257}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.17, y: 0, z: 0}
 --- !u!120 &466818512021640995
 LineRenderer:
   serializedVersion: 2
@@ -74,7 +74,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 4
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
@@ -128,7 +128,7 @@ LineRenderer:
       m_NumAlphaKeys: 3
     numCornerVertices: 0
     numCapVertices: 0
-    alignment: 0
+    alignment: 1
     textureMode: 0
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
@@ -161,51 +161,51 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 557804718057260493, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: gradient.key1.b
-      value: 0.3231132
+      value: 0.7429245
       objectReference: {fileID: 0}
     - target: {fileID: 557804718057260493, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: gradient.key1.g
-      value: 0.3801144
+      value: 0.844322
       objectReference: {fileID: 0}
     - target: {fileID: 557804718057260493, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: gradient.key1.r
-      value: 0.5
+      value: 0.990566
       objectReference: {fileID: 0}
     - target: {fileID: 557804718057260493, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: gradient.key2.b
-      value: 0.14150941
+      value: 0.8018868
       objectReference: {fileID: 0}
     - target: {fileID: 557804718057260493, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: gradient.key2.g
-      value: 0.14150941
+      value: 0.8018868
       objectReference: {fileID: 0}
     - target: {fileID: 557804718057260493, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: gradient.key2.r
-      value: 0.14150941
+      value: 0.8018868
       objectReference: {fileID: 0}
     - target: {fileID: 557804718057260493, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: gradient.key3.b
-      value: 0.50743145
+      value: 0.3584906
       objectReference: {fileID: 0}
     - target: {fileID: 557804718057260493, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: gradient.key3.g
-      value: 0.57040423
+      value: 0.29928476
       objectReference: {fileID: 0}
     - target: {fileID: 557804718057260493, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: gradient.key3.r
-      value: 0.5943396
+      value: 0.20461018
       objectReference: {fileID: 0}
     - target: {fileID: 557804718057260493, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: gradient.key4.b
-      value: 0.7264151
+      value: 0.13207549
       objectReference: {fileID: 0}
     - target: {fileID: 557804718057260493, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: gradient.key4.g
-      value: 0.7264151
+      value: 0.13207549
       objectReference: {fileID: 0}
     - target: {fileID: 557804718057260493, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: gradient.key4.r
-      value: 0.7264151
+      value: 0.13207549
       objectReference: {fileID: 0}
     - target: {fileID: 2239068614606812991, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: m_Controller
@@ -254,6 +254,14 @@ PrefabInstance:
     - target: {fileID: 5804646342822278894, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448369330983778918, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: places.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448369330983778918, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: places.Array.data[0]
+      value: Maintnance
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -1902896490818553065, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
