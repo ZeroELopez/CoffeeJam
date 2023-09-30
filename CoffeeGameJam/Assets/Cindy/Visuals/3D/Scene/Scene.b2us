@@ -5,7 +5,7 @@
   <Objects>
     <Object>
       <Name>Cubicle Wall</Name>
-      <Prefab>Assets/Cindy/Models/Scene/Prefabs/_Cube.001.fbx</Prefab>
+      <Prefab>Assets/Cindy/Visuals/3D/Scene/Prefabs/_Cube.001.fbx</Prefab>
       <Position>(0.0, 0.0, 0.0)</Position>
       <Rotation>(0.0, -0.0, 0.0)</Rotation>
       <Scale>(1.0, 1.0, 1.0)</Scale>
@@ -16,7 +16,7 @@
     </Object>
     <Object>
       <Name>Cubicle Front</Name>
-      <Prefab>Assets/Cindy/Models/Scene/Prefabs/_Cubicle.fbx</Prefab>
+      <Prefab>Assets/Cindy/Visuals/3D/Scene/Prefabs/_Cubicle.fbx</Prefab>
       <Position>(-1.44776, 0.24661, 0.0)</Position>
       <Rotation>(0.0, -0.0, 0.0)</Rotation>
       <Scale>(1.0, 1.0, 1.0)</Scale>

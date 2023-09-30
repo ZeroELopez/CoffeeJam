@@ -30,7 +30,7 @@ public class ExploderAI : enemyAI2
     {
         distance = Vector2.Distance(transform.position, player.transform.position);
 
-        Debug.Log("Distance: " + distance + " Explosion Range: " + Explosion.ExplosionRange);
+        //Debug.Log("Distance: " + distance + " Explosion Range: " + Explosion.ExplosionRange);
 
         if(distance < Explosion.ExplosionRange)
         {
