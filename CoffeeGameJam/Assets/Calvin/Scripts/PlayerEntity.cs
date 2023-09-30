@@ -116,8 +116,8 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
         lastDirection = -Vector2.one;
         decayTime = decayTimer;
 
-        var playerHUD = GameObject.FindFirstObjectByType<Healthbar>();
-        playerHUD.entity= this;
+        var playerHUD = GameObject.FindFirstObjectByType<PlayerHUD>();
+        playerHUD.PlayerToTrack= this;
         this.OnHealthChanged += playerHUD.UpdateHUD;
     }
 

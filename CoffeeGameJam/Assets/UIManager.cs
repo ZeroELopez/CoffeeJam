@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class UIManager : Singleton<UIManager>, ISubscribable<HideHealthbar>, ISubscribable<ShowHealthbar>
 {
-    Healthbar healthbar;
+    PlayerHUD healthbar;
 
     public void HandleEvent(HideHealthbar evt)
     {
@@ -34,7 +34,7 @@ public class UIManager : Singleton<UIManager>, ISubscribable<HideHealthbar>, ISu
         DontDestroyOnLoad(this);
         SetInstance(this);
 
-        healthbar = GetComponentInChildren<Healthbar>();
+        healthbar = GetComponentInChildren<PlayerHUD>();
         Subscribe();
     }
 }
