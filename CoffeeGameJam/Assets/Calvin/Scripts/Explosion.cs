@@ -33,6 +33,13 @@ public class Explosion : MonoBehaviour
             player.CurrentHealth -= ExplosionDamage;
             player.StartCoroutine(player.Invincibility());
         }
+
+        var enemy = other.GetComponent<EnemyEntity>();
+        if(enemy != null)
+        {
+            EventHub.Instance.PostEvent(new EnemyIsHit());
+            enemy.CurrentHealth -= ExplosionDamage;
+        }
     }
 
     private IEnumerator Explode()
