@@ -15,7 +15,7 @@ public class enemyAI2 : MonoBehaviour
     protected int patrolIndex;
 
     [SerializeField]
-    protected float patrolTolerance = 0.001f;
+    protected float patrolTolerance = 0.01f;
 
     // Start is called before the first frame update
     void Start()

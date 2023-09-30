@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class PlayerHUD : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshProUGUI temporaryIndicator;
+    private Image indicator;
 
     [SerializeField]
     public PlayerEntity PlayerToTrack;
-        
+
     public void UpdateHUD()
     {
-        temporaryIndicator.SetText("Health: " + PlayerToTrack.CurrentHealth + " / " + PlayerToTrack.BaseHealth);
-    }    
+        indicator.fillAmount = (float)PlayerToTrack.CurrentHealth / (float)PlayerToTrack.BaseHealth;
+    }
 }
