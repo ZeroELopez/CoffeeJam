@@ -13,7 +13,7 @@ namespace Assets.Scripts.Base.Events
     public class PlayerPowerUpStart : DispatchableEvent { }
     public class PlayerPowerUpEnd : DispatchableEvent { }
 
-    public class  TogglePause : DispatchableEvent
+    public class TogglePause : DispatchableEvent
     {
         
     }
@@ -22,4 +22,7 @@ namespace Assets.Scripts.Base.Events
         public EnemyEntity hitEnemy;
     }
     public class PlayerIsHit : DispatchableEvent { }
+
+    public class HideHealthbar : DispatchableEvent { }
+    public class ShowHealthbar : DispatchableEvent { }
 }

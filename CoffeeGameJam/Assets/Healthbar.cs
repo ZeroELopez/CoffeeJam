@@ -3,22 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Image))]
 public class Healthbar : MonoBehaviour
 {
-    Image image;
+    [SerializeField] Image image;
 
     private void Start()
     {
         image = GetComponent<Image>();
     }
-    [SerializeField] Entity entity;
+    public PlayerEntity entity;
 
-    // Update is called once per frame
+    /*
     void Update()
     {
         if (entity == null)
             return;
 
+        image.fillAmount = (float)entity.CurrentHealth / (float)entity.BaseHealth;
+    }*/
+
+    public void UpdateHUD()
+    {
         image.fillAmount = (float)entity.CurrentHealth / (float)entity.BaseHealth;
     }
 }

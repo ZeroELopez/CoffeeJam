@@ -15,7 +15,22 @@ EditorBuildSettings:
     path: Assets/Calvin/Scenes/YouLose.unity
     guid: 9532b74ee066c504199d937cbdaae113
   - enabled: 1
-    path: Assets/David/level1.unity
-    guid: 56dacd19e7d8e6d40ac3d3a2088a8c26
+    path: Assets/Chris/Levels/Level1.unity
+    guid: 5272aa5528b7e8b408672090dede5b12
+  - enabled: 1
+    path: Assets/Chris/Levels/Level2.unity
+    guid: f7551a54a2d8f6e4989b3997ec545430
+  - enabled: 1
+    path: Assets/Chris/Levels/Level3.unity
+    guid: 6ebfe9ef2c8cd134bb56a3c528ace6b7
+  - enabled: 1
+    path: Assets/Chris/Levels/Level4.unity
+    guid: 0a5b9b446a6370049bebd06d73440401
+  - enabled: 1
+    path: Assets/Chris/Levels/Level5.unity
+    guid: 083aadfd78a9bf248afc99ffb8ccd99b
+  - enabled: 1
+    path: Assets/Calvin/Scenes/LoadingScreen.unity
+    guid: 368a499007ab72048b930bb3a772e21f
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 13dde499997c8b640bfb6e2fef02b4ea, type: 2}

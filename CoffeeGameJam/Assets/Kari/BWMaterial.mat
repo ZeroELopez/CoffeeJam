@@ -64,6 +64,6 @@ Material:
     - _Fullscreen_SrcColorBlend: 5
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Saturation: 0.9
+    - _Saturation: 1.41
     m_Colors: []
   m_BuildTextureStacks: []
