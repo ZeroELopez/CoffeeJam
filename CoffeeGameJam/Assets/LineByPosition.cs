@@ -14,6 +14,7 @@ public class LineByPosition : MonoBehaviour
     float time = 0;
     [SerializeField] float intervals = .5f;
     [SerializeField] int MaxLength = 30;
+    [SerializeField] Vector3 offset;
     // Update is called once per frame
     void Update()
     {
@@ -21,7 +22,7 @@ public class LineByPosition : MonoBehaviour
 
         if (time > intervals)
         {
-            locs.Add(transform.position);
+            locs.Add(transform.position + offset);
             time = 0;
         }
 

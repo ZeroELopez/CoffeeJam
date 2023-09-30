@@ -12,7 +12,7 @@ public class Healthbar : MonoBehaviour
     {
         image = GetComponent<Image>();
     }
-    public PlayerEntity entity;
+    public Entity entity;
 
     /*
     void Update()

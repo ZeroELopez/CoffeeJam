@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4009871427997755237, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Boss
       objectReference: {fileID: 0}
     - target: {fileID: 5804646342822278894, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52,8 +52,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8448369330983778918, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: inbetween
+      value: the
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448369330983778918, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: names.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448369330983778918, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: places.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448369330983778918, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: names.Array.data[0]
+      value: Mr Johnson
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448369330983778918, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: places.Array.data[0]
+      value: Corporate Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448369330983778918, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: places.Array.data[1]
+      value: Handsy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448369330983778918, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: places.Array.data[2]
+      value: HR Nightmare
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448369330983778918, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: places.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8920458846447344898, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: entity
+      value: 
+      objectReference: {fileID: 3317861249067888748}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+--- !u!114 &3317861249067888748 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1186465340366458112, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+  m_PrefabInstance: {fileID: 4502547166881037676}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba164ebd522ce4a42b40092e7ce2c260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

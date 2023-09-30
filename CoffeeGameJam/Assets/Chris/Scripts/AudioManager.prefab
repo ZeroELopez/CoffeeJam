@@ -244,6 +244,140 @@ MonoBehaviour:
     pitchMin: 1
     pitchMax: 1.37
     startingPoints: 00000000
+  - name: MC Footstep
+    clip: {fileID: 8300000, guid: 1614647c8374ced40baba54246f77860, type: 3}
+    clipVariants: []
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 0.95
+    pitchMax: 1.39
+    startingPoints: 00000000
+  - name: Enemy Footstep
+    clip: {fileID: 8300000, guid: 7c31d14396dfce24f9a79130673cd15a, type: 3}
+    clipVariants: []
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 0.95
+    pitchMax: 1.39
+    startingPoints: 00000000
+  - name: Janitor Footstep
+    clip: {fileID: 8300000, guid: 60784d97ffed58f41a9a54908eb35c19, type: 3}
+    clipVariants: []
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 0.95
+    pitchMax: 1.39
+    startingPoints: 00000000
+  - name: MopSound1
+    clip: {fileID: 8300000, guid: 481edbe66f1a358408bbe87ec0e1c698, type: 3}
+    clipVariants: []
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 0.95
+    pitchMax: 1.39
+    startingPoints: 00000000
+  - name: ZombieDeath
+    clip: {fileID: 8300000, guid: 481edbe66f1a358408bbe87ec0e1c698, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: 0c6b80fbbe910a646b2a99211de32dd0, type: 3}
+    - {fileID: 8300000, guid: 08326861616189c479ce64795312a991, type: 3}
+    - {fileID: 8300000, guid: dce1cc1b9e00e7e4182ccfabe5bccbde, type: 3}
+    - {fileID: 8300000, guid: 7dba6f3ef868c0c4ab9a01f05e5515bc, type: 3}
+    - {fileID: 8300000, guid: 7343a7bd76ffefd44b2a826cc7a6c5eb, type: 3}
+    - {fileID: 8300000, guid: cc07ba5354b8f7643859dda90d313cb0, type: 3}
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 0.95
+    pitchMax: 1.39
+    startingPoints: 00000000
+  - name: HitSound1
+    clip: {fileID: 8300000, guid: 481edbe66f1a358408bbe87ec0e1c698, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: c19dd6c0ae320b645a8878fdf2933322, type: 3}
+    - {fileID: 8300000, guid: 5181c4cab96bd6442b051301018c02e3, type: 3}
+    - {fileID: 8300000, guid: e90fe653e04531c4f8ea8c646ffbce6a, type: 3}
+    - {fileID: 8300000, guid: 089a69b82da3ba34ca18e841dabdf3b6, type: 3}
+    - {fileID: 8300000, guid: 221c36345dd54174db2be61bea6d182e, type: 3}
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 0.95
+    pitchMax: 1.39
+    startingPoints: 00000000
+  - name: BossCoffee
+    clip: {fileID: 8300000, guid: a3577b153bdf7eb44ba087041853f720, type: 3}
+    clipVariants: []
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: MC Coffee
+    clip: {fileID: 8300000, guid: be12437f5c487ca4e99ce7df65ffcfc8, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: c19dd6c0ae320b645a8878fdf2933322, type: 3}
+    - {fileID: 8300000, guid: 5181c4cab96bd6442b051301018c02e3, type: 3}
+    - {fileID: 8300000, guid: e90fe653e04531c4f8ea8c646ffbce6a, type: 3}
+    - {fileID: 8300000, guid: 089a69b82da3ba34ca18e841dabdf3b6, type: 3}
+    - {fileID: 8300000, guid: 221c36345dd54174db2be61bea6d182e, type: 3}
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 0.9
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Boss Coffee Start
+    clip: {fileID: 8300000, guid: da3832a682828474585246fe4d26c9fd, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: c19dd6c0ae320b645a8878fdf2933322, type: 3}
+    - {fileID: 8300000, guid: 5181c4cab96bd6442b051301018c02e3, type: 3}
+    - {fileID: 8300000, guid: e90fe653e04531c4f8ea8c646ffbce6a, type: 3}
+    - {fileID: 8300000, guid: 089a69b82da3ba34ca18e841dabdf3b6, type: 3}
+    - {fileID: 8300000, guid: 221c36345dd54174db2be61bea6d182e, type: 3}
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Boss AfterHit
+    clip: {fileID: 8300000, guid: 562836d66ff58c049b235b6c474604cb, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: e27cb6e37198efe4f92d389c213cadbb, type: 3}
+    - {fileID: 8300000, guid: 562836d66ff58c049b235b6c474604cb, type: 3}
+    volumeMin: 0.5
+    volumeMax: 0.5
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Boss Found
+    clip: {fileID: 8300000, guid: d7c3def94f9bcf74ea942d628c69dd87, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: d7c3def94f9bcf74ea942d628c69dd87, type: 3}
+    - {fileID: 8300000, guid: de03148a012521f499d4716b19bc020c, type: 3}
+    volumeMin: 0.5
+    volumeMax: 0.5
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Boss Misc
+    clip: {fileID: 8300000, guid: 3f31061d3cec0b046a04a02dbf1627f7, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: 3f31061d3cec0b046a04a02dbf1627f7, type: 3}
+    - {fileID: 8300000, guid: dba07cb4a70b6774db693b0d8a46df25, type: 3}
+    - {fileID: 8300000, guid: 047ce66ceab61f6479faf3b42013f16a, type: 3}
+    volumeMin: 0.5
+    volumeMax: 0.5
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Zombie AfterHit
+    clip: {fileID: 8300000, guid: d9cb0635138539641bd32c74e336439c, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: d9cb0635138539641bd32c74e336439c, type: 3}
+    - {fileID: 8300000, guid: f27f79d77fa89ac40968f2a947b246c8, type: 3}
+    volumeMin: 0.5
+    volumeMax: 0.5
+    pitchMin: 0.9
+    pitchMax: 1.1
+    startingPoints: 00000000
 --- !u!1 &1937215849184870802
 GameObject:
   m_ObjectHideFlags: 0

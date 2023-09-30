@@ -247,6 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseHealth: 100
+  currentHealth: 0
   invincibilityFrames: 60
   moveSpeed: 5
   attackHitbox: {fileID: 2346134139195551859}
@@ -1282,6 +1283,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   length: 1.2
+  volume: 0.5
 --- !u!114 &6311744137409117626 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1095745393394672881, guid: e92bc7498f62e08489b24ae776705f5c, type: 3}
