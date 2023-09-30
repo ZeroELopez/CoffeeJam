@@ -33,17 +33,13 @@ public class UsableObjectBucket : MonoBehaviour
         for(int i = 0; i < instance.usableObjects.Count;i++)
             if (Vector3.Distance(instance.usableObjects[i].transform.position,position) <= reach)
             {
-                obj = instance.usableObjects[i];
-                obj.Use();
+                instance.UseObject(instance.usableObjects[i]);
 
                 instance.onUsed?.Invoke(instance.usableObjects[i].spriteRenderer.sprite);
                 onUsedAction?.Invoke(instance.usableObjects[i].spriteRenderer.sprite);//Because the top one didn't work
                 LastUsedSprite = instance.usableObjects[i].spriteRenderer.sprite;
 
-                instance.usedObjects.Enqueue(instance.usableObjects[i]);
-                instance.usableObjects.RemoveAt(i);
 
-                instance.CheckUsedCount();
                 return true;
             }
 
@@ -58,6 +54,16 @@ public class UsableObjectBucket : MonoBehaviour
             obj.Respawn();
             usableObjects.Add(obj);
         }
+    }
+
+    public void UseObject(UsableObject obj)
+    {
+        obj.Use();
+
+        instance.usedObjects.Enqueue(obj);
+        instance.usableObjects.Remove(obj);
+
+        instance.CheckUsedCount();
     }
 
     public UnityEvent onRespawn;

@@ -45,7 +45,205 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd78aaca51eb9848a5699a24edbdb50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: Jacob
+    clip: {fileID: 8300000, guid: ec504a5f942a89a49a41f1db93148442, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: PTO
+    clip: {fileID: 8300000, guid: bf21a51548aad914db4899c180908b46, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Overtime
+    clip: {fileID: 8300000, guid: 8e1539f2aa4176f4d9988d9de49d7648, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: FrontDesk
+    clip: {fileID: 8300000, guid: 20269e98c45bbfa41aa06153e2d81fc4, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: BossIntro
+    clip: {fileID: 8300000, guid: cf992cd54eb5ce248adaba855bfeee53, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: BossDeath
+    clip: {fileID: 8300000, guid: fea6c3cb777bcaf4f839e7f8ee5ccbe2, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: EndScene
+    clip: {fileID: 8300000, guid: 03051a65c91ed0e4baef7b9db89ca083, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Paul
+    clip: {fileID: 8300000, guid: 5eb26b60feb53254986aaa64ca56732b, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Jamie
+    clip: {fileID: 8300000, guid: 325bf80706472b94088557e4f03baf71, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Richard
+    clip: {fileID: 8300000, guid: d3020ed7ac0c81c48a2335371816216a, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Luke
+    clip: {fileID: 8300000, guid: 7be585338da864d4c9aafd532bb9fde3, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Mario
+    clip: {fileID: 8300000, guid: 63e5f6654bda1e54cb045e058f8a6d7b, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Jose
+    clip: {fileID: 8300000, guid: 795234571dd34b347acacb51e99ad250, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: MC_AfterHit1
+    clip: {fileID: 8300000, guid: 1d78d8beee458b74680a128d55fd0edd, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 0000000003000000
+  - name: MC_AfterHit2
+    clip: {fileID: 8300000, guid: 3e35626cadaa1f0478cbe67e71c55e20, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 000000000200000004000000
+  - name: MC_AfterHit3
+    clip: {fileID: 8300000, guid: 1289d7ff49468864485d0b300a8be584, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 0000000002000000
+  - name: MC_Attack
+    clip: {fileID: 8300000, guid: 7566155251231c941a1e3110890d2a7a, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 000000000200000004000000
+  - name: MC_OnHit
+    clip: {fileID: 8300000, guid: 0f0aef94d21d801419883b46289bec77, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 000000000100000002000000
+  - name: MC_OnHit
+    clip: {fileID: 8300000, guid: 0f0aef94d21d801419883b46289bec77, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 000000000100000002000000
+  - name: MC_DrinkCoffee
+    clip: {fileID: 8300000, guid: 50d46fb3fe663fb42a5fe3be2d176eda, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: MC_Breathing
+    clip: {fileID: 8300000, guid: 38d743f987c9daa40b1629f1d915e0d2, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: NZ Found
+    clip: {fileID: 8300000, guid: fe3ec115b6b7c5343a38b70c3759d722, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: fe3ec115b6b7c5343a38b70c3759d722, type: 3}
+    - {fileID: 8300000, guid: 37c6da44b005bd743a14c276bd0fad7a, type: 3}
+    - {fileID: 8300000, guid: a1c7ae93deae18945a879b2b46fd3087, type: 3}
+    - {fileID: 8300000, guid: 4255c49f2e12a514c9ab76cc925bfaa5, type: 3}
+    - {fileID: 8300000, guid: b50f3b189f666784bad994b098e69c38, type: 3}
+    - {fileID: 8300000, guid: ed256d1f31a2ae84a9347fa06909f431, type: 3}
+    - {fileID: 8300000, guid: 13c067a471802d947809f83f4d66c1b4, type: 3}
+    - {fileID: 8300000, guid: 54296dbc9199d8d469a9c963c4f87177, type: 3}
+    - {fileID: 8300000, guid: c87dcf2d5f126694e81d591411d4d19a, type: 3}
+    volumeMin: 0.404
+    volumeMax: 0.57
+    pitchMin: 0.96
+    pitchMax: 1.25
+    startingPoints: 00000000
+  - name: JZ Found
+    clip: {fileID: 8300000, guid: c19dd6c0ae320b645a8878fdf2933322, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: c19dd6c0ae320b645a8878fdf2933322, type: 3}
+    - {fileID: 8300000, guid: 5181c4cab96bd6442b051301018c02e3, type: 3}
+    - {fileID: 8300000, guid: e90fe653e04531c4f8ea8c646ffbce6a, type: 3}
+    - {fileID: 8300000, guid: 089a69b82da3ba34ca18e841dabdf3b6, type: 3}
+    - {fileID: 8300000, guid: 221c36345dd54174db2be61bea6d182e, type: 3}
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 1
+    pitchMax: 1.37
+    startingPoints: 00000000
 --- !u!1 &1937215849184870802
 GameObject:
   m_ObjectHideFlags: 0

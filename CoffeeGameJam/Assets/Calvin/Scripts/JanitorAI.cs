@@ -22,16 +22,19 @@ public class JanitorAI : enemyAI2
             transform.position = Vector2.MoveTowards(this.transform.position, target.transform.position, speed * Time.deltaTime);
             if(Vector2.Distance(transform.position, target.transform.position) <= ObjectKillRange)
             {
-                Destroy(target.gameObject);
+                //Destroy(target.gameObject);
+                UsableObjectBucket.instance.UseObject(target);
+
                 target = null;
             }
         }
         else
         {
-            target = GameObject.FindFirstObjectByType<UsableObject>();
+            if (UsableObjectBucket.instance.usableObjects.Count > 0)
+                target = UsableObjectBucket.instance.usableObjects[0];//GameObject.FindFirstObjectByType<UsableObject>();
 
             //If not Usable Objects Found, patrol around the level for a player
-            if(target == null)
+            if (target == null)
             {
                 if(player != null)
                 {

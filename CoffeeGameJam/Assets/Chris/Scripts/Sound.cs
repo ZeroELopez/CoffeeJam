@@ -10,8 +10,18 @@ public class Sound
 
     public AudioClip clip;
 
+    public AudioClip[] clipVariants;
+
+
     [Range(0f, 1f)]
-    public float volume;
+    public float volumeMin = 1;
+    [Range(0f, 1f)]
+    public float volumeMax = 1;
+
     [Range(.1f, 3f)]
-    public float pitch;
+    public float pitchMin = 1;
+    [Range(.1f, 3f)]
+    public float pitchMax = 1;
+
+    public int[] startingPoints = new int[1] { 0 };
 }

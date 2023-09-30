@@ -7,6 +7,8 @@ public class CopySprite : MonoBehaviour
     [SerializeField] SpriteRenderer parentRenderer;
     SpriteRenderer spriteRenderer;
 
+    bool CopyFlip = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,5 +19,8 @@ public class CopySprite : MonoBehaviour
     void Update()
     {
         spriteRenderer.sprite = parentRenderer.sprite;
+
+        if (CopyFlip)
+            spriteRenderer.flipX = parentRenderer.flipX;
     }
 }
