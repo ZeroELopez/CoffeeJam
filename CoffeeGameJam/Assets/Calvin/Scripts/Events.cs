@@ -25,4 +25,7 @@ namespace Assets.Scripts.Base.Events
 
     public class HideHealthbar : DispatchableEvent { }
     public class ShowHealthbar : DispatchableEvent { }
+
+    public class TryAgain : DispatchableEvent { }
+    public class ExitToMainMenu : DispatchableEvent { }
 }

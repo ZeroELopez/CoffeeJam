@@ -11,6 +11,7 @@ public static class SceneLoaderModule
 
     public static void LoadLevel(string levelName)
     {
+        GameManager.Instance.LastLevelLoaded = levelName;
         LoadingScreen.Tasks.Push(CO_LoadLevel(levelName));
         UnloadAllScenesExcept("Management");
 
@@ -25,6 +26,8 @@ public static class SceneLoaderModule
 
     private static IEnumerator CO_LoadLevel(string levelName)
     {
+        if(string.IsNullOrEmpty(levelName)) { yield break; }
+
         yield return "Loading " + levelName;
         AsyncOperation op = SceneManager.LoadSceneAsync(levelName, LoadSceneMode.Additive);
         op.completed += Op_completed;
