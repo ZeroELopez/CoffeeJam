@@ -13,9 +13,6 @@ public class MusicManager : MonoBehaviour
     string[] lines;
     [SerializeField] AnimationCurve curve;
     [SerializeField] float length;
-
-    [SerializeField] float volume;
-
     float time;
     // Start is called before the first frame update
 
@@ -44,8 +41,8 @@ public class MusicManager : MonoBehaviour
             return;
 
         time += Time.deltaTime;
-        oldSource.volume =  (1 - curve.Evaluate(time / length)) * volume;
-        newSource.volume = (curve.Evaluate(time / length)) * volume;
+        oldSource.volume =  1 - curve.Evaluate(time / length);
+        newSource.volume = curve.Evaluate(time / length);
     }
 
     void SwitchSource()

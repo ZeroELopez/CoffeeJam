@@ -49,8 +49,6 @@ public class EntityEventTracker : MonoBehaviour, ISubscribable<PlayerPowerUpStar
     public UnityEvent<EntityState> onPowerUp;
     public UnityEvent<EntityState> onPowerDown;
 
-    public UnityEvent<EntityState> onDeath;
-
     EntityState prevState;
     // Update is called once per frame
     void Update()
@@ -119,10 +117,8 @@ public class EntityEventTracker : MonoBehaviour, ISubscribable<PlayerPowerUpStar
             onHit?.Invoke(prevState);
 
             if (evt.hitEnemy.CurrentHealth <= 0)
-            {
                 globalOnKill?.Invoke();
-                onDeath?.Invoke(prevState);
-            }
+
         }
 
     }
@@ -219,10 +215,12 @@ public struct PlayerState : EntityState
 
         if (isAttacking != b.isAttacking)
         {
-            UsableObjectBucket.ObjectNearby(e.transform.position, 2, out UsableObject obj);
 
             if (b.isAttacking)
+            {
+                UsableObjectBucket.ObjectNearby(e.transform.position, 2, out UsableObject obj);
                 logs.Add("onAttack");
+            }
             else
                 logs.Add("onAttackEnd");
         }

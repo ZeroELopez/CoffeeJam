@@ -35,11 +35,10 @@ public class UsableObjectBucket : MonoBehaviour
             {
                 instance.UseObject(instance.usableObjects[i]);
 
-                instance.onUsed?.Invoke(instance.usableObjects[i].spriteRenderer.sprite);
-                onUsedAction?.Invoke(instance.usableObjects[i].spriteRenderer.sprite);//Because the top one didn't work
-                LastUsedSprite = instance.usableObjects[i].spriteRenderer.sprite;
+                //instance.onUsed?.Invoke(instance.usableObjects[i].spriteRenderer.sprite);
+                onUsedAction?.Invoke(LastUsedSprite);//Because the top one didn't work
 
-
+                Debug.Log("use object");
                 return true;
             }
 
@@ -64,6 +63,8 @@ public class UsableObjectBucket : MonoBehaviour
         instance.usableObjects.Remove(obj);
 
         instance.CheckUsedCount();
+        LastUsedSprite = obj.spriteRenderer.sprite;
+
     }
 
     public UnityEvent onRespawn;

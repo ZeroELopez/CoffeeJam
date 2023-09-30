@@ -16,7 +16,12 @@ namespace AnnoyingClassNames
             UsableObjectBucket.onUsedAction += RecieveSprite;
         }
 
-        void RecieveSprite(Sprite sprite) => spriteRenderer.sprite = sprite;
+        void RecieveSprite(Sprite sprite)
+        {
+            Debug.Log("Sprite Recieved");
+
+            spriteRenderer.sprite = sprite;
+        }
 
         private void OnDestroy() =>            UsableObjectBucket.onUsedAction -= RecieveSprite;
         private void OnDisable() => UsableObjectBucket.onUsedAction -= RecieveSprite;

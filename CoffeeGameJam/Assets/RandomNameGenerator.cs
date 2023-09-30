@@ -10,20 +10,13 @@ public class RandomNameGenerator : MonoBehaviour
     [SerializeField] string[] names;
     [SerializeField] string[] places;
     [SerializeField] string inbetween;
-
-    string firstName;
     // Start is called before the first frame update
     void Start()
     {
         gui = GetComponent<TextMeshProUGUI>();
-        firstName = names[Random.Range(0, names.Length)];
-        gui.text =  firstName+ inbetween + places[Random.Range(0, places.Length)];
+
+        gui.text = names[Random.Range(0, names.Length)] + inbetween + places[Random.Range(0, places.Length)];
 
         
-    }
-
-    public void DeathVoiceLine()
-    {
-        AudioManager.PlaySound(firstName, EntityEventTracker.player.GetComponentInChildren<AudioSource>());
     }
 }

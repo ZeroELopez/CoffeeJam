@@ -11,7 +11,7 @@ public class SendGradient : MonoBehaviour
     [SerializeField] Gradient[] multiGradients;
 
     [SerializeField] Material material;
-
+    private Material _material;
     [SerializeField] Texture2D texture;
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,9 @@ public class SendGradient : MonoBehaviour
 
         if (multiGradients.Length > 0)
             gradient = multiGradients[Random.Range(0, multiGradients.Length - 1)];
+
+       // _material = material;// Instantiate(material);
+        //GetComponent<SpriteRenderer>().material = _material;
     }
 
     // Update is called once per frame
@@ -33,6 +36,6 @@ public class SendGradient : MonoBehaviour
 
         texture.Apply();
 
-        material.SetTexture("_Palette", texture);
+        GetComponent<SpriteRenderer>().material.SetTexture("_Palette", texture);
     }
 }

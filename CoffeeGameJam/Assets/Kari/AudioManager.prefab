@@ -1,0 +1,508 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &611835521053653709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4754729726005907906}
+  - component: {fileID: 7269768741204127332}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4754729726005907906
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611835521053653709}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.17453738, y: 0.8120715, z: -0.0042398116}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8121734058379388068}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7269768741204127332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611835521053653709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cd78aaca51eb9848a5699a24edbdb50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Jacob
+    clip: {fileID: 8300000, guid: ec504a5f942a89a49a41f1db93148442, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: PTO
+    clip: {fileID: 8300000, guid: bf21a51548aad914db4899c180908b46, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Overtime
+    clip: {fileID: 8300000, guid: 8e1539f2aa4176f4d9988d9de49d7648, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: FrontDesk
+    clip: {fileID: 8300000, guid: 20269e98c45bbfa41aa06153e2d81fc4, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: BossIntro
+    clip: {fileID: 8300000, guid: cf992cd54eb5ce248adaba855bfeee53, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: BossDeath
+    clip: {fileID: 8300000, guid: fea6c3cb777bcaf4f839e7f8ee5ccbe2, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: EndScene
+    clip: {fileID: 8300000, guid: 03051a65c91ed0e4baef7b9db89ca083, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Paul
+    clip: {fileID: 8300000, guid: 5eb26b60feb53254986aaa64ca56732b, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Jamie
+    clip: {fileID: 8300000, guid: 325bf80706472b94088557e4f03baf71, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Richard
+    clip: {fileID: 8300000, guid: d3020ed7ac0c81c48a2335371816216a, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Luke
+    clip: {fileID: 8300000, guid: 7be585338da864d4c9aafd532bb9fde3, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Mario
+    clip: {fileID: 8300000, guid: 63e5f6654bda1e54cb045e058f8a6d7b, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Jose
+    clip: {fileID: 8300000, guid: 795234571dd34b347acacb51e99ad250, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: MC_AfterHit1
+    clip: {fileID: 8300000, guid: 1d78d8beee458b74680a128d55fd0edd, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 0000000003000000
+  - name: MC_AfterHit2
+    clip: {fileID: 8300000, guid: 3e35626cadaa1f0478cbe67e71c55e20, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 000000000200000004000000
+  - name: MC_AfterHit3
+    clip: {fileID: 8300000, guid: 1289d7ff49468864485d0b300a8be584, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 0000000002000000
+  - name: MC_Attack
+    clip: {fileID: 8300000, guid: 7566155251231c941a1e3110890d2a7a, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 000000000200000004000000
+  - name: MC_OnHit
+    clip: {fileID: 8300000, guid: 0f0aef94d21d801419883b46289bec77, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 000000000100000002000000
+  - name: MC_OnHit
+    clip: {fileID: 8300000, guid: 0f0aef94d21d801419883b46289bec77, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 000000000100000002000000
+  - name: MC_DrinkCoffee
+    clip: {fileID: 8300000, guid: 50d46fb3fe663fb42a5fe3be2d176eda, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: MC_Breathing
+    clip: {fileID: 8300000, guid: 38d743f987c9daa40b1629f1d915e0d2, type: 3}
+    clipVariants: []
+    volumeMin: 1
+    volumeMax: 1
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: NZ Found
+    clip: {fileID: 8300000, guid: fe3ec115b6b7c5343a38b70c3759d722, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: fe3ec115b6b7c5343a38b70c3759d722, type: 3}
+    - {fileID: 8300000, guid: 37c6da44b005bd743a14c276bd0fad7a, type: 3}
+    - {fileID: 8300000, guid: a1c7ae93deae18945a879b2b46fd3087, type: 3}
+    - {fileID: 8300000, guid: 4255c49f2e12a514c9ab76cc925bfaa5, type: 3}
+    - {fileID: 8300000, guid: b50f3b189f666784bad994b098e69c38, type: 3}
+    - {fileID: 8300000, guid: ed256d1f31a2ae84a9347fa06909f431, type: 3}
+    - {fileID: 8300000, guid: 13c067a471802d947809f83f4d66c1b4, type: 3}
+    - {fileID: 8300000, guid: 54296dbc9199d8d469a9c963c4f87177, type: 3}
+    - {fileID: 8300000, guid: c87dcf2d5f126694e81d591411d4d19a, type: 3}
+    volumeMin: 0.404
+    volumeMax: 0.57
+    pitchMin: 0.96
+    pitchMax: 1.25
+    startingPoints: 00000000
+  - name: JZ Found
+    clip: {fileID: 8300000, guid: c19dd6c0ae320b645a8878fdf2933322, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: c19dd6c0ae320b645a8878fdf2933322, type: 3}
+    - {fileID: 8300000, guid: 5181c4cab96bd6442b051301018c02e3, type: 3}
+    - {fileID: 8300000, guid: e90fe653e04531c4f8ea8c646ffbce6a, type: 3}
+    - {fileID: 8300000, guid: 089a69b82da3ba34ca18e841dabdf3b6, type: 3}
+    - {fileID: 8300000, guid: 221c36345dd54174db2be61bea6d182e, type: 3}
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 1
+    pitchMax: 1.37
+    startingPoints: 00000000
+  - name: MC Footstep
+    clip: {fileID: 8300000, guid: 1614647c8374ced40baba54246f77860, type: 3}
+    clipVariants: []
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 0.95
+    pitchMax: 1.39
+    startingPoints: 00000000
+  - name: Enemy Footstep
+    clip: {fileID: 8300000, guid: 7c31d14396dfce24f9a79130673cd15a, type: 3}
+    clipVariants: []
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 0.95
+    pitchMax: 1.39
+    startingPoints: 00000000
+  - name: Janitor Footstep
+    clip: {fileID: 8300000, guid: 60784d97ffed58f41a9a54908eb35c19, type: 3}
+    clipVariants: []
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 0.95
+    pitchMax: 1.39
+    startingPoints: 00000000
+  - name: MopSound1
+    clip: {fileID: 8300000, guid: 481edbe66f1a358408bbe87ec0e1c698, type: 3}
+    clipVariants: []
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 0.95
+    pitchMax: 1.39
+    startingPoints: 00000000
+  - name: ZombieDeath
+    clip: {fileID: 8300000, guid: 481edbe66f1a358408bbe87ec0e1c698, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: 0c6b80fbbe910a646b2a99211de32dd0, type: 3}
+    - {fileID: 8300000, guid: 08326861616189c479ce64795312a991, type: 3}
+    - {fileID: 8300000, guid: dce1cc1b9e00e7e4182ccfabe5bccbde, type: 3}
+    - {fileID: 8300000, guid: 7dba6f3ef868c0c4ab9a01f05e5515bc, type: 3}
+    - {fileID: 8300000, guid: 7343a7bd76ffefd44b2a826cc7a6c5eb, type: 3}
+    - {fileID: 8300000, guid: cc07ba5354b8f7643859dda90d313cb0, type: 3}
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 0.95
+    pitchMax: 1.39
+    startingPoints: 00000000
+  - name: HitSound1
+    clip: {fileID: 8300000, guid: 481edbe66f1a358408bbe87ec0e1c698, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: c19dd6c0ae320b645a8878fdf2933322, type: 3}
+    - {fileID: 8300000, guid: 5181c4cab96bd6442b051301018c02e3, type: 3}
+    - {fileID: 8300000, guid: e90fe653e04531c4f8ea8c646ffbce6a, type: 3}
+    - {fileID: 8300000, guid: 089a69b82da3ba34ca18e841dabdf3b6, type: 3}
+    - {fileID: 8300000, guid: 221c36345dd54174db2be61bea6d182e, type: 3}
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 0.95
+    pitchMax: 1.39
+    startingPoints: 00000000
+  - name: BossCoffee
+    clip: {fileID: 8300000, guid: a3577b153bdf7eb44ba087041853f720, type: 3}
+    clipVariants: []
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: MC Coffee
+    clip: {fileID: 8300000, guid: be12437f5c487ca4e99ce7df65ffcfc8, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: c19dd6c0ae320b645a8878fdf2933322, type: 3}
+    - {fileID: 8300000, guid: 5181c4cab96bd6442b051301018c02e3, type: 3}
+    - {fileID: 8300000, guid: e90fe653e04531c4f8ea8c646ffbce6a, type: 3}
+    - {fileID: 8300000, guid: 089a69b82da3ba34ca18e841dabdf3b6, type: 3}
+    - {fileID: 8300000, guid: 221c36345dd54174db2be61bea6d182e, type: 3}
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 0.9
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Boss Coffee Start
+    clip: {fileID: 8300000, guid: da3832a682828474585246fe4d26c9fd, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: c19dd6c0ae320b645a8878fdf2933322, type: 3}
+    - {fileID: 8300000, guid: 5181c4cab96bd6442b051301018c02e3, type: 3}
+    - {fileID: 8300000, guid: e90fe653e04531c4f8ea8c646ffbce6a, type: 3}
+    - {fileID: 8300000, guid: 089a69b82da3ba34ca18e841dabdf3b6, type: 3}
+    - {fileID: 8300000, guid: 221c36345dd54174db2be61bea6d182e, type: 3}
+    volumeMin: 0.497
+    volumeMax: 0.556
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Boss AfterHit
+    clip: {fileID: 8300000, guid: 562836d66ff58c049b235b6c474604cb, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: e27cb6e37198efe4f92d389c213cadbb, type: 3}
+    - {fileID: 8300000, guid: 562836d66ff58c049b235b6c474604cb, type: 3}
+    volumeMin: 0.5
+    volumeMax: 0.5
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Boss Found
+    clip: {fileID: 8300000, guid: d7c3def94f9bcf74ea942d628c69dd87, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: d7c3def94f9bcf74ea942d628c69dd87, type: 3}
+    - {fileID: 8300000, guid: de03148a012521f499d4716b19bc020c, type: 3}
+    volumeMin: 0.5
+    volumeMax: 0.5
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Boss Misc
+    clip: {fileID: 8300000, guid: 3f31061d3cec0b046a04a02dbf1627f7, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: 3f31061d3cec0b046a04a02dbf1627f7, type: 3}
+    - {fileID: 8300000, guid: dba07cb4a70b6774db693b0d8a46df25, type: 3}
+    - {fileID: 8300000, guid: 047ce66ceab61f6479faf3b42013f16a, type: 3}
+    volumeMin: 0.5
+    volumeMax: 0.5
+    pitchMin: 1
+    pitchMax: 1
+    startingPoints: 00000000
+  - name: Zombie AfterHit
+    clip: {fileID: 8300000, guid: d9cb0635138539641bd32c74e336439c, type: 3}
+    clipVariants:
+    - {fileID: 8300000, guid: d9cb0635138539641bd32c74e336439c, type: 3}
+    - {fileID: 8300000, guid: f27f79d77fa89ac40968f2a947b246c8, type: 3}
+    volumeMin: 0.5
+    volumeMax: 0.5
+    pitchMin: 0.9
+    pitchMax: 1.1
+    startingPoints: 00000000
+--- !u!1 &1937215849184870802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8121734058379388068}
+  - component: {fileID: 7922677965782366943}
+  m_Layer: 0
+  m_Name: Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8121734058379388068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937215849184870802}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4754729726005907906}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &7922677965782366943
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937215849184870802}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
