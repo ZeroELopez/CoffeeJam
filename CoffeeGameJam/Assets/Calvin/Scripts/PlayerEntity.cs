@@ -135,6 +135,17 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
         controls.PlayerController.Pause.canceled += OnPause;
     }
 
+    void OnDestroy()
+    {
+        controls.PlayerController.Move.started -= OnMove;
+        controls.PlayerController.Move.performed -= OnMove;
+        controls.PlayerController.Move.canceled -= OnMove;
+        controls.PlayerController.AttackInteract.started -= OnAttackInteract;
+        controls.PlayerController.AttackInteract.performed -= OnAttackInteract;
+        controls.PlayerController.AttackInteract.canceled -= OnAttackInteract;
+        controls.PlayerController.Pause.canceled -= OnPause;
+    }
+
     public void OnPause(InputAction.CallbackContext obj)
     {
         EventHub.Instance.PostEvent(new TogglePause());
