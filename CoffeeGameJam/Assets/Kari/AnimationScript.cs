@@ -66,7 +66,8 @@ namespace CoffeeJam.Visuals
 
                 return;
             }
-            thisAnimator.Play((state = newState).ToString(), 0);
+            // if (thisAnimator.HasState(0, newState.ToString()))
+                thisAnimator.Play((state = newState).ToString(), 0);
 
 
         }
@@ -82,7 +83,7 @@ namespace CoffeeJam.Visuals
             CharacterStates newState = CharacterStates.Idle;
 
 
-            if (prevPos != transform.position)
+            if (Vector3.Distance(prevPos,transform.position) > .1f)
             {
                 if (transform.position.x > prevPos.x)
                     transform.localScale = new Vector3(originalScale.x * -1, originalScale.y, originalScale.z);

@@ -25,6 +25,8 @@ public class Healthbar : MonoBehaviour
 
     public void UpdateHUD()
     {
+        if (image == null)
+            return;
         image.fillAmount = (float)entity.CurrentHealth / (float)entity.BaseHealth;
     }
 }

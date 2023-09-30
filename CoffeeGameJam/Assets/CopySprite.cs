@@ -18,9 +18,12 @@ public class CopySprite : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (parentRenderer == null)
+            return;
+
         spriteRenderer.sprite = parentRenderer.sprite;
 
-        if (CopyFlip)
+        if (CopyFlip && spriteRenderer != null)
             spriteRenderer.flipX = parentRenderer.flipX;
     }
 }

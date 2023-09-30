@@ -60,7 +60,7 @@ public class BossAI : enemyAI2
                 Projectile p = Instantiate(Projectile, transform.position, transform.rotation);
                 p.Direction = direction;
 
-                yield return new WaitForSeconds(StandStillTimer / (NumProjectiles + 1));
+                yield return new WaitForSeconds(StartupTimeFirePhase);
             }
 
             yield return new WaitForSeconds(StartupTimeLungePhase);

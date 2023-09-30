@@ -51,6 +51,6 @@ public class ObjectShake : MonoBehaviour
 
     public void CameraShake() => Camera.Shake();
 
-    public void CameraShakeMultiplier(float newMultiplier) => Camera.ShakeMultiplier(newMultiplier);
+    public void CameraShakeMultiplier(float newMultiplier) { if (Camera) Camera.ShakeMultiplier(newMultiplier); }
 
 }

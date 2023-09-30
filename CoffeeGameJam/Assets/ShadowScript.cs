@@ -15,6 +15,9 @@ public class ShadowScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (follow == null)
+            return;
+
         transform.position = follow.position;
         transform.localScale = follow.lossyScale;
         transform.rotation = new Quaternion();
