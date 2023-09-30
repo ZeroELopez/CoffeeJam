@@ -8,7 +8,7 @@ public class EnemyEntity : Entity, ISubscribable<PlayerPowerUpStart>, ISubscriba
     enemyAI2 AIScript;
 
     [SerializeField]
-    private int collisionDamage;
+    public int collisionDamage;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
