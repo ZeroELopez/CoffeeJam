@@ -1,0 +1,1000 @@
+{
+    "version": {
+        "major": 5,
+        "minor": 1
+    },
+    "project": {
+        "format": {
+            "extension": "png"
+        },
+        "camera": {
+            "width": 1920,
+            "height": 1080,
+            "field": 0,
+            "framerate": 24.0,
+            "pixelaspectratio": 1.0,
+            "antialiasing": 1
+        },
+        "clip": {
+            "name": "Clip_005",
+            "width": 1080,
+            "height": 1920,
+            "dpi": 72,
+            "framerate": 24.0,
+            "pixelaspectratio": 1.0,
+            "image-count": 30,
+            "bg": {
+                "red": 255,
+                "green": 255,
+                "blue": 255
+            },
+            "markin": {
+                "status": false,
+                "value": 0
+            },
+            "markout": {
+                "status": false,
+                "value": 0
+            },
+            "camera": {
+                "mode": 2,
+                "profile": "2 0 1 0 0 1 1 ",
+                "motion-blur": 0.0,
+                "lock-all": false,
+                "lock-x": false,
+                "lock-y": false,
+                "lock-angle": false,
+                "lock-scale": false,
+                "points": [],
+                "positions": [
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    },
+                    {
+                        "x": -420.0,
+                        "y": 420.0,
+                        "angle": 0.0,
+                        "scale": 1.0
+                    }
+                ]
+            },
+            "layers": [
+                {
+                    "name": "Hand",
+                    "visible": true,
+                    "position": 0,
+                    "opacity": 255,
+                    "start": 10,
+                    "end": 29,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 10,
+                            "instance-name": "1",
+                            "file": "[000] Hand/[0010] Hand.png",
+                            "images": [
+                                10
+                            ]
+                        },
+                        {
+                            "instance-index": 12,
+                            "instance-name": "2",
+                            "file": "[000] Hand/[0012] Hand.png",
+                            "images": [
+                                12
+                            ]
+                        },
+                        {
+                            "instance-index": 14,
+                            "instance-name": "3",
+                            "file": "[000] Hand/[0014] Hand.png",
+                            "images": [
+                                14
+                            ]
+                        },
+                        {
+                            "instance-index": 16,
+                            "instance-name": "4",
+                            "file": "[000] Hand/[0016] Hand.png",
+                            "images": [
+                                16
+                            ]
+                        },
+                        {
+                            "instance-index": 18,
+                            "instance-name": "5",
+                            "file": "[000] Hand/[0018] Hand.png",
+                            "images": [
+                                18
+                            ]
+                        },
+                        {
+                            "instance-index": 20,
+                            "instance-name": "6",
+                            "file": "[000] Hand/[0020] Hand.png",
+                            "images": [
+                                20
+                            ]
+                        },
+                        {
+                            "instance-index": 22,
+                            "instance-name": "7",
+                            "file": "[000] Hand/[0022] Hand.png",
+                            "images": [
+                                22
+                            ]
+                        },
+                        {
+                            "instance-index": 23,
+                            "instance-name": "8",
+                            "file": "[000] Hand/[0023] Hand.png",
+                            "images": [
+                                23
+                            ]
+                        },
+                        {
+                            "instance-index": 24,
+                            "instance-name": "9",
+                            "file": "[000] Hand/[0024] Hand.png",
+                            "images": [
+                                24
+                            ]
+                        },
+                        {
+                            "instance-index": 26,
+                            "instance-name": "10",
+                            "file": "[000] Hand/[0026] Hand.png",
+                            "images": [
+                                26
+                            ]
+                        },
+                        {
+                            "instance-index": 28,
+                            "instance-name": "11",
+                            "file": "[000] Hand/[0028] Hand.png",
+                            "images": [
+                                28
+                            ]
+                        },
+                        {
+                            "instance-index": 29,
+                            "instance-name": "12",
+                            "file": "[000] Hand/[0029] Hand.png",
+                            "images": [
+                                29
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CTG_Hand",
+                    "visible": true,
+                    "position": 1,
+                    "opacity": 255,
+                    "start": 10,
+                    "end": 29,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 255,
+                        "green": 115,
+                        "blue": 40
+                    },
+                    "link": [
+                        {
+                            "instance-index": 10,
+                            "instance-name": "1",
+                            "file": "[001] CTG_Hand/[0010] CTG_Hand.png",
+                            "images": [
+                                10
+                            ]
+                        },
+                        {
+                            "instance-index": 12,
+                            "instance-name": "2",
+                            "file": "[001] CTG_Hand/[0012] CTG_Hand.png",
+                            "images": [
+                                12
+                            ]
+                        },
+                        {
+                            "instance-index": 14,
+                            "instance-name": "3",
+                            "file": "[001] CTG_Hand/[0014] CTG_Hand.png",
+                            "images": [
+                                14
+                            ]
+                        },
+                        {
+                            "instance-index": 16,
+                            "instance-name": "4",
+                            "file": "[001] CTG_Hand/[0016] CTG_Hand.png",
+                            "images": [
+                                16
+                            ]
+                        },
+                        {
+                            "instance-index": 18,
+                            "instance-name": "5",
+                            "file": "[001] CTG_Hand/[0018] CTG_Hand.png",
+                            "images": [
+                                18
+                            ]
+                        },
+                        {
+                            "instance-index": 20,
+                            "instance-name": "6",
+                            "file": "[001] CTG_Hand/[0020] CTG_Hand.png",
+                            "images": [
+                                20
+                            ]
+                        },
+                        {
+                            "instance-index": 22,
+                            "instance-name": "7",
+                            "file": "[001] CTG_Hand/[0022] CTG_Hand.png",
+                            "images": [
+                                22
+                            ]
+                        },
+                        {
+                            "instance-index": 23,
+                            "instance-name": "8",
+                            "file": "[001] CTG_Hand/[0023] CTG_Hand.png",
+                            "images": [
+                                23
+                            ]
+                        },
+                        {
+                            "instance-index": 24,
+                            "instance-name": "9",
+                            "file": "[001] CTG_Hand/[0024] CTG_Hand.png",
+                            "images": [
+                                24
+                            ]
+                        },
+                        {
+                            "instance-index": 26,
+                            "instance-name": "10",
+                            "file": "[001] CTG_Hand/[0026] CTG_Hand.png",
+                            "images": [
+                                26
+                            ]
+                        },
+                        {
+                            "instance-index": 28,
+                            "instance-name": "11",
+                            "file": "[001] CTG_Hand/[0028] CTG_Hand.png",
+                            "images": [
+                                28
+                            ]
+                        },
+                        {
+                            "instance-index": 29,
+                            "instance-name": "12",
+                            "file": "[001] CTG_Hand/[0029] CTG_Hand.png",
+                            "images": [
+                                29
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "Stand",
+                    "visible": true,
+                    "position": 3,
+                    "opacity": 255,
+                    "start": 10,
+                    "end": 21,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 10,
+                            "instance-name": "1",
+                            "file": "[003] Stand/[0010] Stand.png",
+                            "images": [
+                                10
+                            ]
+                        },
+                        {
+                            "instance-index": 12,
+                            "instance-name": "2",
+                            "file": "[003] Stand/[0012] Stand.png",
+                            "images": [
+                                12
+                            ]
+                        },
+                        {
+                            "instance-index": 13,
+                            "instance-name": "3",
+                            "file": "[003] Stand/[0013] Stand.png",
+                            "images": [
+                                13
+                            ]
+                        },
+                        {
+                            "instance-index": 15,
+                            "instance-name": "4",
+                            "file": "[003] Stand/[0015] Stand.png",
+                            "images": [
+                                15
+                            ]
+                        },
+                        {
+                            "instance-index": 16,
+                            "instance-name": "5",
+                            "file": "[003] Stand/[0016] Stand.png",
+                            "images": [
+                                16
+                            ]
+                        },
+                        {
+                            "instance-index": 18,
+                            "instance-name": "6",
+                            "file": "[003] Stand/[0018] Stand.png",
+                            "images": [
+                                18
+                            ]
+                        },
+                        {
+                            "instance-index": 20,
+                            "instance-name": "7",
+                            "file": "[003] Stand/[0020] Stand.png",
+                            "images": [
+                                20
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CTG_Stand",
+                    "visible": true,
+                    "position": 4,
+                    "opacity": 255,
+                    "start": 10,
+                    "end": 21,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 255,
+                        "green": 115,
+                        "blue": 40
+                    },
+                    "link": [
+                        {
+                            "instance-index": 10,
+                            "instance-name": "1",
+                            "file": "[004] CTG_Stand/[0010] CTG_Stand.png",
+                            "images": [
+                                10
+                            ]
+                        },
+                        {
+                            "instance-index": 12,
+                            "instance-name": "2",
+                            "file": "[004] CTG_Stand/[0012] CTG_Stand.png",
+                            "images": [
+                                12
+                            ]
+                        },
+                        {
+                            "instance-index": 13,
+                            "instance-name": "3",
+                            "file": "[004] CTG_Stand/[0013] CTG_Stand.png",
+                            "images": [
+                                13
+                            ]
+                        },
+                        {
+                            "instance-index": 15,
+                            "instance-name": "4",
+                            "file": "[004] CTG_Stand/[0015] CTG_Stand.png",
+                            "images": [
+                                15
+                            ]
+                        },
+                        {
+                            "instance-index": 16,
+                            "instance-name": "5",
+                            "file": "[004] CTG_Stand/[0016] CTG_Stand.png",
+                            "images": [
+                                16
+                            ]
+                        },
+                        {
+                            "instance-index": 18,
+                            "instance-name": "6",
+                            "file": "[004] CTG_Stand/[0018] CTG_Stand.png",
+                            "images": [
+                                18
+                            ]
+                        },
+                        {
+                            "instance-index": 20,
+                            "instance-name": "7",
+                            "file": "[004] CTG_Stand/[0020] CTG_Stand.png",
+                            "images": [
+                                20
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "Arms",
+                    "visible": true,
+                    "position": 5,
+                    "opacity": 255,
+                    "start": 10,
+                    "end": 10,
+                    "pre-behavior": 0,
+                    "post-behavior": 3,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 10,
+                            "instance-name": "1",
+                            "file": "[005] Arms/[0010] Arms.png",
+                            "images": [
+                                10
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CTG_arms",
+                    "visible": true,
+                    "position": 6,
+                    "opacity": 255,
+                    "start": 10,
+                    "end": 10,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 255,
+                        "green": 115,
+                        "blue": 40
+                    },
+                    "link": [
+                        {
+                            "instance-index": 10,
+                            "instance-name": "1",
+                            "file": "[006] CTG_arms/[0010] CTG_arms.png",
+                            "images": [
+                                10
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "Legs",
+                    "visible": true,
+                    "position": 8,
+                    "opacity": 255,
+                    "start": 1,
+                    "end": 9,
+                    "pre-behavior": 0,
+                    "post-behavior": 3,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 1,
+                            "instance-name": "1",
+                            "file": "[008] Legs/[0001] Legs.png",
+                            "images": [
+                                1
+                            ]
+                        },
+                        {
+                            "instance-index": 2,
+                            "instance-name": "2",
+                            "file": "[008] Legs/[0002] Legs.png",
+                            "images": [
+                                2
+                            ]
+                        },
+                        {
+                            "instance-index": 4,
+                            "instance-name": "3",
+                            "file": "[008] Legs/[0004] Legs.png",
+                            "images": [
+                                4
+                            ]
+                        },
+                        {
+                            "instance-index": 5,
+                            "instance-name": "4",
+                            "file": "[008] Legs/[0005] Legs.png",
+                            "images": [
+                                5
+                            ]
+                        },
+                        {
+                            "instance-index": 6,
+                            "instance-name": "5",
+                            "file": "[008] Legs/[0006] Legs.png",
+                            "images": [
+                                6
+                            ]
+                        },
+                        {
+                            "instance-index": 9,
+                            "instance-name": "6",
+                            "file": "[008] Legs/[0009] Legs.png",
+                            "images": [
+                                9
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CTG_Legs",
+                    "visible": true,
+                    "position": 9,
+                    "opacity": 255,
+                    "start": 1,
+                    "end": 9,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 255,
+                        "green": 115,
+                        "blue": 40
+                    },
+                    "link": [
+                        {
+                            "instance-index": 1,
+                            "instance-name": "1",
+                            "file": "[009] CTG_Legs/[0001] CTG_Legs.png",
+                            "images": [
+                                1
+                            ]
+                        },
+                        {
+                            "instance-index": 2,
+                            "instance-name": "2",
+                            "file": "[009] CTG_Legs/[0002] CTG_Legs.png",
+                            "images": [
+                                2
+                            ]
+                        },
+                        {
+                            "instance-index": 4,
+                            "instance-name": "3",
+                            "file": "[009] CTG_Legs/[0004] CTG_Legs.png",
+                            "images": [
+                                4
+                            ]
+                        },
+                        {
+                            "instance-index": 5,
+                            "instance-name": "4",
+                            "file": "[009] CTG_Legs/[0005] CTG_Legs.png",
+                            "images": [
+                                5
+                            ]
+                        },
+                        {
+                            "instance-index": 9,
+                            "instance-name": "5",
+                            "file": "[009] CTG_Legs/[0009] CTG_Legs.png",
+                            "images": [
+                                9
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "Bottom",
+                    "visible": true,
+                    "position": 10,
+                    "opacity": 255,
+                    "start": 9,
+                    "end": 9,
+                    "pre-behavior": 0,
+                    "post-behavior": 3,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 9,
+                            "instance-name": "1",
+                            "file": "[010] Bottom/[0009] Bottom.png",
+                            "images": [
+                                9
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CTG_Bottom",
+                    "visible": true,
+                    "position": 11,
+                    "opacity": 255,
+                    "start": 9,
+                    "end": 9,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 255,
+                        "green": 115,
+                        "blue": 40
+                    },
+                    "link": [
+                        {
+                            "instance-index": 9,
+                            "instance-name": "1",
+                            "file": "[011] CTG_Bottom/[0009] CTG_Bottom.png",
+                            "images": [
+                                9
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CrashB",
+                    "visible": true,
+                    "position": 12,
+                    "opacity": 255,
+                    "start": 1,
+                    "end": 8,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 0
+                    },
+                    "link": [
+                        {
+                            "instance-index": 1,
+                            "instance-name": "1",
+                            "file": "[012] CrashB/[0001] CrashB.png",
+                            "images": [
+                                1
+                            ]
+                        },
+                        {
+                            "instance-index": 2,
+                            "instance-name": "2",
+                            "file": "[012] CrashB/[0002] CrashB.png",
+                            "images": [
+                                2
+                            ]
+                        },
+                        {
+                            "instance-index": 4,
+                            "instance-name": "3",
+                            "file": "[012] CrashB/[0004] CrashB.png",
+                            "images": [
+                                4
+                            ]
+                        },
+                        {
+                            "instance-index": 5,
+                            "instance-name": "4",
+                            "file": "[012] CrashB/[0005] CrashB.png",
+                            "images": [
+                                5
+                            ]
+                        },
+                        {
+                            "instance-index": 6,
+                            "instance-name": "5",
+                            "file": "[012] CrashB/[0006] CrashB.png",
+                            "images": [
+                                6
+                            ]
+                        },
+                        {
+                            "instance-index": 7,
+                            "instance-name": "6",
+                            "file": "[012] CrashB/[0007] CrashB.png",
+                            "images": [
+                                7
+                            ]
+                        },
+                        {
+                            "instance-index": 8,
+                            "instance-name": "7",
+                            "file": "[012] CrashB/[0008] CrashB.png",
+                            "images": [
+                                8
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                },
+                {
+                    "name": "CTG_CrashB",
+                    "visible": true,
+                    "position": 13,
+                    "opacity": 255,
+                    "start": 1,
+                    "end": 8,
+                    "pre-behavior": 0,
+                    "post-behavior": 0,
+                    "blending-mode": "Color",
+                    "group": {
+                        "red": 255,
+                        "green": 115,
+                        "blue": 40
+                    },
+                    "link": [
+                        {
+                            "instance-index": 1,
+                            "instance-name": "1",
+                            "file": "[013] CTG_CrashB/[0001] CTG_CrashB.png",
+                            "images": [
+                                1
+                            ]
+                        },
+                        {
+                            "instance-index": 2,
+                            "instance-name": "2",
+                            "file": "[013] CTG_CrashB/[0002] CTG_CrashB.png",
+                            "images": [
+                                2
+                            ]
+                        },
+                        {
+                            "instance-index": 4,
+                            "instance-name": "3",
+                            "file": "[013] CTG_CrashB/[0004] CTG_CrashB.png",
+                            "images": [
+                                4
+                            ]
+                        },
+                        {
+                            "instance-index": 5,
+                            "instance-name": "4",
+                            "file": "[013] CTG_CrashB/[0005] CTG_CrashB.png",
+                            "images": [
+                                5
+                            ]
+                        },
+                        {
+                            "instance-index": 6,
+                            "instance-name": "5",
+                            "file": "[013] CTG_CrashB/[0006] CTG_CrashB.png",
+                            "images": [
+                                6
+                            ]
+                        },
+                        {
+                            "instance-index": 7,
+                            "instance-name": "6",
+                            "file": "[013] CTG_CrashB/[0007] CTG_CrashB.png",
+                            "images": [
+                                7
+                            ]
+                        },
+                        {
+                            "instance-index": 8,
+                            "instance-name": "7",
+                            "file": "[013] CTG_CrashB/[0008] CTG_CrashB.png",
+                            "images": [
+                                8
+                            ]
+                        }
+                    ],
+                    "repeat": []
+                }
+            ]
+        }
+    }
+}
