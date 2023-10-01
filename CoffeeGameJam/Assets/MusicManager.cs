@@ -47,6 +47,9 @@ public class MusicManager : MonoBehaviour
 
     void SwitchSource()
     {
+        if (audioSources[1] == null)
+            return;
+
         if (audioSources[1].volume > audioSources[0].volume)
         {
             Debug.Log("Set A");

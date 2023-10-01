@@ -816,6 +816,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7168481590930005072}
   m_SourcePrefab: {fileID: 100100000, guid: c0aae09ac3492a54f85c5c0a49ea3a2e, type: 3}
+--- !u!82 &5940868992804930336 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7837497695313417877, guid: c0aae09ac3492a54f85c5c0a49ea3a2e, type: 3}
+  m_PrefabInstance: {fileID: 4518894377365149109}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6334092316637890440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7588953609109738045, guid: c0aae09ac3492a54f85c5c0a49ea3a2e, type: 3}
@@ -838,6 +843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0105100d07a38f64a9ccab98db9aebdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 5940868992804930336}
   LevelNames:
   - Level1
   - Level2
