@@ -49,6 +49,9 @@ public class EntityEventTracker : MonoBehaviour, ISubscribable<PlayerPowerUpStar
     public UnityEvent<EntityState> onPowerUp;
     public UnityEvent<EntityState> onPowerDown;
 
+    public UnityEvent<EntityState> onDeath;
+
+
     EntityState prevState;
     // Update is called once per frame
     void Update()
@@ -117,7 +120,10 @@ public class EntityEventTracker : MonoBehaviour, ISubscribable<PlayerPowerUpStar
             onHit?.Invoke(prevState);
 
             if (evt.hitEnemy.CurrentHealth <= 0)
+            {
                 globalOnKill?.Invoke();
+                onDeath?.Invoke(prevState);
+            }
 
         }
 
@@ -154,7 +160,7 @@ public struct EnemyState : EntityState
     {
         CurrentHealth = state.CurrentHealth;
         player = GameObject.FindObjectOfType<PlayerEntity>();
-        foundPlayer = false;//state.GetComponent<enemyAI2>().foundPlayer;
+        foundPlayer = state.GetComponent<enemyAI2>().foundPlayer;
     }
 
     public bool ChangedState(Entity e, out List<string> logs)
@@ -175,13 +181,13 @@ public struct EnemyState : EntityState
         //        }
 
 
-        //if (!foundPlayer && b.GetComponent<enemyAI2>().foundPlayer)
-        //{
-        //    logs.Add("onPlayerFound");
-        //    foundPlayer = true;
-        //}
-        //else if (foundPlayer && !b.GetComponent<enemyAI2>().foundPlayer)
-        //    foundPlayer = false;
+        if (!foundPlayer && b.GetComponent<enemyAI2>().foundPlayer)
+        {
+            logs.Add("onPlayerFound");
+            foundPlayer = true;
+        }
+        else if (foundPlayer && !b.GetComponent<enemyAI2>().foundPlayer)
+            foundPlayer = false;
 
         return logs.Count > 0;
     }

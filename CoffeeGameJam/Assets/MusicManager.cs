@@ -29,6 +29,9 @@ public class MusicManager : MonoBehaviour
         SwitchSource();
         onSong++;
 
+        if (newSource == null)
+            return;
+
         newSource.clip = Songs[onSong];
         newSource.Play();
         time = 0;

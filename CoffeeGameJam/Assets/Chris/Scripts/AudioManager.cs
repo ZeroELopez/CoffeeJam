@@ -29,7 +29,9 @@ public class AudioManager : MonoBehaviour
                 source.clip = sound.clip;
 
                 if (sound.clipVariants.Length > 0)
-                    source.clip = sound.clipVariants[Random.Range(0, sound.clipVariants.Length - 1)];
+                    source.clip = sound.clipVariants[
+                        Mathf.Clamp(Random.Range(0, sound.clipVariants.Length),0, sound.clipVariants.Length - 1)
+                        ];
 
 
                 source.volume = Random.Range(sound.volumeMin, sound.volumeMax);

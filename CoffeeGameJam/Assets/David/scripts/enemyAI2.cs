@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class enemyAI2 : MonoBehaviour
 {
+    public bool foundPlayer;
     public GameObject player;
     public float speed;
 
@@ -32,11 +33,13 @@ public class enemyAI2 : MonoBehaviour
 
             if (distance < range)
             {
+                foundPlayer = true;
                 transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
                 //transform.rotation = Quaternion.Euler(Vector3.forward * angle);
             }
             else
             {
+                foundPlayer = false;
                 if (patrolRoute.Length > 0)
                 {
                     transform.position = Vector2.MoveTowards(this.transform.position, patrolRoute[patrolIndex].position, speed * Time.deltaTime);

@@ -955,6 +955,54 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 4362760400423565845, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: onAttackEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362760400423565845, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: onAttackEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362760400423565845, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: PlayVoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362760400423565845, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: onAttackEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 213887665450354553}
+    - target: {fileID: 4362760400423565845, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: onAttackEnd.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362760400423565845, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: onAttackEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayVoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362760400423565845, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: onPlayerFound.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayVoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362760400423565845, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_StringArgument
+      value: Boss AfterHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362760400423565845, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: onAttackEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: EntityEventTracker, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362760400423565845, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: onAttackEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: BossMisc
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362760400423565845, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: onPlayerFound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Boss Found
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362760400423565845, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: onAttackEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5013266252200404294, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: m_Color.a
       value: 0.1764706
@@ -1245,6 +1293,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 5953157019494379802}
   m_SourcePrefab: {fileID: 100100000, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+--- !u!114 &213887665450354553 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4362760400423565845, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+  m_PrefabInstance: {fileID: 4502547166881037676}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bed8b46265c09b409dcfb2dabb8c41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &709789849399974409 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4009871427997755237, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
@@ -1262,6 +1321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cdfb2c540f8b0341b631da0fadf64ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foundPlayer: 0
   player: {fileID: 0}
   speed: 0
   range: 10

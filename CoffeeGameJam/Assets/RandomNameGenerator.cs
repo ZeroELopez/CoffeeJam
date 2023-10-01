@@ -7,6 +7,10 @@ public class RandomNameGenerator : MonoBehaviour
 {
     TextMeshProUGUI gui;
 
+    string firstName;
+
+
+
     [SerializeField] string[] names;
     [SerializeField] string[] places;
     [SerializeField] string inbetween;
@@ -14,9 +18,15 @@ public class RandomNameGenerator : MonoBehaviour
     void Start()
     {
         gui = GetComponent<TextMeshProUGUI>();
+        firstName = names[Random.Range(0, names.Length)];
 
-        gui.text = names[Random.Range(0, names.Length)] + inbetween + places[Random.Range(0, places.Length)];
+        gui.text = firstName + inbetween + places[Random.Range(0, places.Length)];
 
         
+    }
+
+    public void SendName()
+    {
+        EntityEventTracker.player.GetComponentInChildren<EntityEventTracker>().PlayVoice(firstName);
     }
 }

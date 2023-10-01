@@ -39,6 +39,8 @@ public class ExploderAI : enemyAI2
         }
         else if (distance < range)
         {
+            foundPlayer = true;
+
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
             sendTime?.Invoke(time);
             time += Time.deltaTime;
@@ -51,6 +53,8 @@ public class ExploderAI : enemyAI2
         }
         else
         {
+            foundPlayer = false;
+
             if (patrolRoute.Length > 0)
             {
                 transform.position = Vector2.MoveTowards(this.transform.position, patrolRoute[patrolIndex].position, speed * Time.deltaTime);
