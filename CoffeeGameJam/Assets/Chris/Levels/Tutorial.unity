@@ -5707,7 +5707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3679990690554732354, guid: eeae5ff7e1cdeef439cdab60c4e2ccb6, type: 3}
       propertyPath: NextScene
-      value: YouWin
+      value: Level1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

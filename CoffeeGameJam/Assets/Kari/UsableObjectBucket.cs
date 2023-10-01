@@ -38,7 +38,7 @@ public class UsableObjectBucket : MonoBehaviour
                 //instance.onUsed?.Invoke(instance.usableObjects[i].spriteRenderer.sprite);
                 onUsedAction?.Invoke(LastUsedSprite);//Because the top one didn't work
 
-                Debug.Log("use object");
+                //Debug.Log("use object");
                 return true;
             }
 

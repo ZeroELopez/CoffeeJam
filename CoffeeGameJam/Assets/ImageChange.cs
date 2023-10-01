@@ -24,9 +24,12 @@ public class ImageChange : MonoBehaviour
 
         float perc = (float)entity.CurrentHealth / (float)entity.BaseHealth;
         float low, high;
-        Debug.Log(perc);
+
         for (int i = 0; i < levels.Length; i++)
         {
+            if (entity == null)
+                return;
+
             if (i == 0)
                 low = 0;
             else

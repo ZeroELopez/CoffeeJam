@@ -18,7 +18,7 @@ namespace AnnoyingClassNames
 
         void RecieveSprite(Sprite sprite)
         {
-            Debug.Log("Sprite Recieved");
+            //Debug.Log("Sprite Recieved");
 
             spriteRenderer.sprite = sprite;
         }

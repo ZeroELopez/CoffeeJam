@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayAudioOnStart : MonoBehaviour
 {
+    [SerializeField] AudioSource source;
+
     [SerializeField] string[] LevelNames;
 
     [SerializeField] string[] LevelStart;
@@ -20,13 +22,13 @@ public class PlayAudioOnStart : MonoBehaviour
             dictionary.Add(LevelNames[i], new string[2] { LevelStart[i], LevelEnd[i] });
 
         if (dictionary.TryGetValue(SceneManager.GetActiveScene().name, out lines))
-            AudioManager.PlaySound(lines[0], GetComponent<AudioSource>());
+            AudioManager.PlaySound(lines[0], source);
     }
 
     public void EndLevelLine()
     {
         if (dictionary.TryGetValue(SceneManager.GetActiveScene().name, out lines))
-        AudioManager.PlaySound(lines[1], GetComponent<AudioSource>());
+        AudioManager.PlaySound(lines[1], source);
     }
 
 }

@@ -571,7 +571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5487409297428821095, guid: c0aae09ac3492a54f85c5c0a49ea3a2e, type: 3}
       propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: PlaySound
+      value: PlayVoice
       objectReference: {fileID: 0}
     - target: {fileID: 5487409297428821095, guid: c0aae09ac3492a54f85c5c0a49ea3a2e, type: 3}
       propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
@@ -810,7 +810,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5982242217098956761, guid: c0aae09ac3492a54f85c5c0a49ea3a2e, type: 3}
-      insertIndex: -1
+      insertIndex: 8
       addedObject: {fileID: 7417296852377366886}
     - targetCorrespondingSourceObject: {fileID: 4623988118796623112, guid: c0aae09ac3492a54f85c5c0a49ea3a2e, type: 3}
       insertIndex: -1

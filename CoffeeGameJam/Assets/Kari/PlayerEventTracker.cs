@@ -126,6 +126,7 @@ public class EntityEventTracker : MonoBehaviour, ISubscribable<PlayerPowerUpStar
     public void HandleOnKill() => onKill?.Invoke(prevState);
 
     public void PlaySound(string n) => AudioManager.PlaySound(n, GetComponent<AudioSource>());
+    public void PlayVoice(string n) => AudioManager.PlaySound(n, GetComponents<AudioSource>()[1]);
 
     public void StartHitFreeze(int frames) => HitFreeze.Instance.StartHitFreeze(frames);
 
