@@ -22,6 +22,9 @@ public class ImageChange : MonoBehaviour
         if (entity == null)
             entity = GameObject.FindFirstObjectByType<PlayerEntity>();
 
+        if (entity == null)
+            return;
+
         float perc = (float)entity.CurrentHealth / (float)entity.BaseHealth;
         float low, high;
 
