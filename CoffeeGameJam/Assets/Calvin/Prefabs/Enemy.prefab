@@ -1770,6 +1770,10 @@ PrefabInstance:
       propertyPath: names.Array.data[11]
       value: Jose
       objectReference: {fileID: 0}
+    - target: {fileID: 401438239717536788, guid: c0aae09ac3492a54f85c5c0a49ea3a2e, type: 3}
+      propertyPath: places.Array.data[3]
+      value: Maintenance
+      objectReference: {fileID: 0}
     - target: {fileID: 821701153450660720, guid: c0aae09ac3492a54f85c5c0a49ea3a2e, type: 3}
       propertyPath: entity
       value: 

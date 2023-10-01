@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: gradient.key4.r
       value: 0.7264151
       objectReference: {fileID: 0}
+    - target: {fileID: 1186465340366458112, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
+      propertyPath: baseHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4009871427997755237, guid: fc3f7e8463c7cec438cb34de7e61226d, type: 3}
       propertyPath: m_Name
       value: Antonio

@@ -131,6 +131,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1891893948565322397, guid: 1bac14e44f144a54ba3c5805ea92c3c4, type: 3}
+      propertyPath: m_text
+      value: 'Made for Coffee Jam 2023
+
+
+        Chris Andrade
+
+        Game Designer,
+        Level Designer, Programmer
+
+
+        Calvin Lee
+
+        Game Designer, Senior
+        Programmer, AI Programmer
+
+
+        Eric/Kari Lopez
+
+        Art Director,
+        Animator, Programmer, Level Designer, Creature Designer, Writer
+
+
+        Cindy
+        Phan
+
+        Background Artist, Prop Artist, CleanUp Artist, UI Designer,
+        Character Designer, Intro Sequence
+
+
+        David Oleen
+
+        AI Programmer,
+        UI Programmer
+
+
+        Maurlfox Martin
+
+        Voice for Ash
+
+
+        Kenny
+        "Atlas" Ta
+
+        Voice for Monsters, SFX Designer
+
+
+        Music Used
+
+        Creo
+        - Start Your Engines'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891893948565322397, guid: 1bac14e44f144a54ba3c5805ea92c3c4, type: 3}
+      propertyPath: m_fontSize
+      value: 20.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891893948565322397, guid: 1bac14e44f144a54ba3c5805ea92c3c4, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248440017616011478, guid: 1bac14e44f144a54ba3c5805ea92c3c4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5228867961057974724, guid: 1bac14e44f144a54ba3c5805ea92c3c4, type: 3}
       propertyPath: m_Name
       value: UI
