@@ -47,6 +47,9 @@ public class EnemyEntity : Entity, ISubscribable<PlayerPowerUpStart>, ISubscriba
     protected override void Initialize()
     {
         AIScript = GetComponent<enemyAI2>();
+        var healthbar = GetComponentInChildren<Healthbar>();
+        healthbar.entity = this;
+
         EventHub.Instance.PostEvent(new EnemySpawned());
         Subscribe();
     }

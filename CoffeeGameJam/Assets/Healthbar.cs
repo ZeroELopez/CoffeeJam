@@ -12,21 +12,14 @@ public class Healthbar : MonoBehaviour
     {
         image = GetComponent<Image>();
     }
-    public PlayerEntity entity;
+    public Entity entity;
 
-    /*
+    
     void Update()
     {
         if (entity == null)
             return;
 
         image.fillAmount = (float)entity.CurrentHealth / (float)entity.BaseHealth;
-    }*/
-
-    public void UpdateHUD()
-    {
-        if (image == null)
-            return;
-        image.fillAmount = (float)entity.CurrentHealth / (float)entity.BaseHealth;
-    }
+    }    
 }
