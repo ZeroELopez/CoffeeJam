@@ -206,7 +206,7 @@ public class PlayerEntity : Entity, InputController.IPlayerControllerActions
     }
     public override void OnDeath()
     {
-        SceneLoaderModule.LoadLevel("YouLose");
+        SceneManager.LoadScene("YouLose");
     }
 
     private IEnumerator PowerUp()
